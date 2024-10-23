@@ -12,11 +12,8 @@ for(int i = 0; i<n ; i++){
 cout<<"The numbers of elements are "<<endl;
     cout<<"[";
 for(int i=0; i<n;i++){
-
     cout<<arr[i]<<" ";
-
 }
     cout<<"]";
-cout<<"ending";
 return 0;
 }
