@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(untitled3 main.cpp)
 add_executable(test sohil.cpp)
-add_executable(test2 test.cpp)
+add_executable(stl test.cpp)
