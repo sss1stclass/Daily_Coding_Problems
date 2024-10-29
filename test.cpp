@@ -17,3 +17,17 @@ int main () {
    return 0;
 
 }
+
+//int getSecondLargest(vector<int> &arr) {
+//    // Code Here
+//    set<int> uniqueElements(arr.begin(), arr.end());
+//
+//    // If there are less than two unique elements, return -1
+//    if (uniqueElements.size() < 2) return -1;
+//
+//    // Convert set to vector and sort
+//    vector<int> uniqueVec(uniqueElements.begin(), uniqueElements.end());
+//    sort(uniqueVec.begin(), uniqueVec.end());
+//
+//    // Return the second last element (second largest)
+//    return uniqueVec.at(uniqueVec.size() - 2);
