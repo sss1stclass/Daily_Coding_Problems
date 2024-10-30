@@ -11,7 +11,7 @@ bool isSorted(vector<int> &arr, int number) {
 }
 
 int main() {
-    int arr[] = {1, 4, 6, 9, 0}; // Example array
+    int arr[] = {1, 4, 6, 9, 0};
     int n = sizeof(arr) / sizeof(arr[0]);
     vector<int>v(arr,arr+n);
     int number = v.size();
