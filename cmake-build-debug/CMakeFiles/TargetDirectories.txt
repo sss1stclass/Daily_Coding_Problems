@@ -1,4 +1,9 @@
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/untitled3.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/stl.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day3_check_sorted_arrya.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day4_remove_duplicates.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day5_move_zeros.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day5_linear_search.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -54,16 +54,6 @@ build CMakeFiles/untitled3.dir/main.cpp.obj: CXX_COMPILER__untitled3_Debug C$:/U
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\untitled3.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
-  TARGET_COMPILE_PDB = CMakeFiles\untitled3.dir\
-  TARGET_PDB = untitled3.pdb
-
-build CMakeFiles/untitled3.dir/sohil.cpp.obj: CXX_COMPILER__untitled3_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/sohil.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\sohil.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
-  TARGET_COMPILE_PDB = CMakeFiles\untitled3.dir\
-  TARGET_PDB = untitled3.pdb
 
 
 # =============================================================================
@@ -73,16 +63,15 @@ build CMakeFiles/untitled3.dir/sohil.cpp.obj: CXX_COMPILER__untitled3_Debug C$:/
 #############################################
 # Link the executable untitled3.exe
 
-build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/main.cpp.obj CMakeFiles/untitled3.dir/sohil.cpp.obj
+build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\untitled3.dir\
   TARGET_FILE = untitled3.exe
   TARGET_IMPLIB = libuntitled3.dll.a
-  TARGET_PDB = untitled3.pdb
+  TARGET_PDB = untitled3.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test
@@ -98,8 +87,6 @@ build CMakeFiles/test.dir/sohil.cpp.obj: CXX_COMPILER__test_Debug C$:/Users/Leno
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
 
 
 # =============================================================================
@@ -115,10 +102,186 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/sohil.cpp.
   OBJECT_DIR = CMakeFiles\test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
   TARGET_FILE = test.exe
   TARGET_IMPLIB = libtest.dll.a
-  TARGET_PDB = test.pdb
+  TARGET_PDB = test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stl
+
+
+#############################################
+# Order-only phony target for stl
+
+build cmake_object_order_depends_target_stl: phony || CMakeFiles/stl.dir
+
+build CMakeFiles/stl.dir/test.cpp.obj: CXX_COMPILER__stl_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/test.cpp || cmake_object_order_depends_target_stl
+  DEP_FILE = CMakeFiles\stl.dir\test.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\stl.dir
+  OBJECT_FILE_DIR = CMakeFiles\stl.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stl
+
+
+#############################################
+# Link the executable stl.exe
+
+build stl.exe: CXX_EXECUTABLE_LINKER__stl_Debug CMakeFiles/stl.dir/test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\stl.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = stl.exe
+  TARGET_IMPLIB = libstl.dll.a
+  TARGET_PDB = stl.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day3_check_sorted_arrya
+
+
+#############################################
+# Order-only phony target for day3_check_sorted_arrya
+
+build cmake_object_order_depends_target_day3_check_sorted_arrya: phony || CMakeFiles/day3_check_sorted_arrya.dir
+
+build CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day3.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
+  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day3.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+
+build CMakeFiles/day3_check_sorted_arrya.dir/day5_move_zeros.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5_move_zeros.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
+  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day5_move_zeros.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+
+build CMakeFiles/day3_check_sorted_arrya.dir/day5.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
+  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day5.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day3_check_sorted_arrya
+
+
+#############################################
+# Link the executable day3_check_sorted_arrya.exe
+
+build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day5_move_zeros.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day3_check_sorted_arrya.exe
+  TARGET_IMPLIB = libday3_check_sorted_arrya.dll.a
+  TARGET_PDB = day3_check_sorted_arrya.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day4_remove_duplicates
+
+
+#############################################
+# Order-only phony target for day4_remove_duplicates
+
+build cmake_object_order_depends_target_day4_remove_duplicates: phony || CMakeFiles/day4_remove_duplicates.dir
+
+build CMakeFiles/day4_remove_duplicates.dir/day4.cpp.obj: CXX_COMPILER__day4_remove_duplicates_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day4.cpp || cmake_object_order_depends_target_day4_remove_duplicates
+  DEP_FILE = CMakeFiles\day4_remove_duplicates.dir\day4.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day4_remove_duplicates.dir
+  OBJECT_FILE_DIR = CMakeFiles\day4_remove_duplicates.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day4_remove_duplicates
+
+
+#############################################
+# Link the executable day4_remove_duplicates.exe
+
+build day4_remove_duplicates.exe: CXX_EXECUTABLE_LINKER__day4_remove_duplicates_Debug CMakeFiles/day4_remove_duplicates.dir/day4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day4_remove_duplicates.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day4_remove_duplicates.exe
+  TARGET_IMPLIB = libday4_remove_duplicates.dll.a
+  TARGET_PDB = day4_remove_duplicates.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day5_move_zeros
+
+
+#############################################
+# Order-only phony target for day5_move_zeros
+
+build cmake_object_order_depends_target_day5_move_zeros: phony || CMakeFiles/day5_move_zeros.dir
+
+build CMakeFiles/day5_move_zeros.dir/day5_move_zeros.cpp.obj: CXX_COMPILER__day5_move_zeros_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5_move_zeros.cpp || cmake_object_order_depends_target_day5_move_zeros
+  DEP_FILE = CMakeFiles\day5_move_zeros.dir\day5_move_zeros.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day5_move_zeros.dir
+  OBJECT_FILE_DIR = CMakeFiles\day5_move_zeros.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day5_move_zeros
+
+
+#############################################
+# Link the executable day5_move_zeros.exe
+
+build day5_move_zeros.exe: CXX_EXECUTABLE_LINKER__day5_move_zeros_Debug CMakeFiles/day5_move_zeros.dir/day5_move_zeros.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day5_move_zeros.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day5_move_zeros.exe
+  TARGET_IMPLIB = libday5_move_zeros.dll.a
+  TARGET_PDB = day5_move_zeros.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day5_linear_search
+
+
+#############################################
+# Order-only phony target for day5_linear_search
+
+build cmake_object_order_depends_target_day5_linear_search: phony || CMakeFiles/day5_linear_search.dir
+
+build CMakeFiles/day5_linear_search.dir/day5.cpp.obj: CXX_COMPILER__day5_linear_search_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5.cpp || cmake_object_order_depends_target_day5_linear_search
+  DEP_FILE = CMakeFiles\day5_linear_search.dir\day5.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day5_linear_search.dir
+  OBJECT_FILE_DIR = CMakeFiles\day5_linear_search.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day5_linear_search
+
+
+#############################################
+# Link the executable day5_linear_search.exe
+
+build day5_linear_search.exe: CXX_EXECUTABLE_LINKER__day5_linear_search_Debug CMakeFiles/day5_linear_search.dir/day5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day5_linear_search.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day5_linear_search.exe
+  TARGET_IMPLIB = libday5_linear_search.dll.a
+  TARGET_PDB = day5_linear_search.exe.dbg
 
 
 #############################################
@@ -146,6 +309,16 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
+
+build day4_remove_duplicates: phony day4_remove_duplicates.exe
+
+build day5_linear_search: phony day5_linear_search.exe
+
+build day5_move_zeros: phony day5_move_zeros.exe
+
+build stl: phony stl.exe
+
 build test: phony test.exe
 
 build untitled3: phony untitled3.exe
@@ -158,7 +331,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe
+build all: phony untitled3.exe test.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe
 
 # =============================================================================
 # Built-in targets
@@ -167,14 +340,14 @@ build all: phony untitled3.exe test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake: phony
+build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake F$:/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################
