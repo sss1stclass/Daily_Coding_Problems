@@ -18,9 +18,36 @@ using namespace std;
 //    return len;
 //}
 
+//optimal solution
+
+int getLongestSubarray(vector<int> &a, long long k) {
+    int right = 0;
+    int left = 0;
+    long long sum = 0;
+    int maxLen = 0;
+    int n = a.size();
+    while (right < n) {
+        if (right < n) {
+            sum += a[right];
+        }
+        while (left <= right && sum > k) {
+            sum -= a[left];
+            left++;
+        }
+        if (sum == k) {
+//            maxLen = max(maxLen, (right - left + 1)); // for longest array
+            maxLen++;  // for the total number of max array of subarray
+        }
+        right++;
+
+    }
+    return maxLen;
+}
+
+
 int main() {
-    vector<int> arr = {10, 5, 2, 7, 1, 9, 15};
-    int k = 15;
+    vector<int> arr = {1};
+    int k = 0;
     cout << getLongestSubarray(arr, k);
 
     return 0;
