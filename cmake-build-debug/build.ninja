@@ -107,6 +107,39 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/sohil.cpp.
   TARGET_PDB = test.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target hash
+
+
+#############################################
+# Order-only phony target for hash
+
+build cmake_object_order_depends_target_hash: phony || CMakeFiles/hash.dir
+
+build CMakeFiles/hash.dir/hash.cpp.obj: CXX_COMPILER__hash_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/hash.cpp || cmake_object_order_depends_target_hash
+  DEP_FILE = CMakeFiles\hash.dir\hash.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\hash.dir
+  OBJECT_FILE_DIR = CMakeFiles\hash.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target hash
+
+
+#############################################
+# Link the executable hash.exe
+
+build hash.exe: CXX_EXECUTABLE_LINKER__hash_Debug CMakeFiles/hash.dir/hash.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\hash.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = hash.exe
+  TARGET_IMPLIB = libhash.dll.a
+  TARGET_PDB = hash.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target stl
 
 
@@ -154,14 +187,8 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj: CXX_COMPILER__day3_ch
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
   OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
 
-build CMakeFiles/day3_check_sorted_arrya.dir/day5_move_zeros.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5_move_zeros.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
-  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day5_move_zeros.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-
-build CMakeFiles/day3_check_sorted_arrya.dir/day5.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day5.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
-  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day5.cpp.obj.d
+build CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day10.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
+  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day10.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
   OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
@@ -174,7 +201,7 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day5.cpp.obj: CXX_COMPILER__day3_ch
 #############################################
 # Link the executable day3_check_sorted_arrya.exe
 
-build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day5_move_zeros.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day5.cpp.obj
+build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
@@ -283,6 +310,138 @@ build day5_linear_search.exe: CXX_EXECUTABLE_LINKER__day5_linear_search_Debug CM
   TARGET_IMPLIB = libday5_linear_search.dll.a
   TARGET_PDB = day5_linear_search.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day7_union
+
+
+#############################################
+# Order-only phony target for day7_union
+
+build cmake_object_order_depends_target_day7_union: phony || CMakeFiles/day7_union.dir
+
+build CMakeFiles/day7_union.dir/day7.cpp.obj: CXX_COMPILER__day7_union_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day7.cpp || cmake_object_order_depends_target_day7_union
+  DEP_FILE = CMakeFiles\day7_union.dir\day7.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day7_union.dir
+  OBJECT_FILE_DIR = CMakeFiles\day7_union.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day7_union
+
+
+#############################################
+# Link the executable day7_union.exe
+
+build day7_union.exe: CXX_EXECUTABLE_LINKER__day7_union_Debug CMakeFiles/day7_union.dir/day7.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day7_union.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day7_union.exe
+  TARGET_IMPLIB = libday7_union.dll.a
+  TARGET_PDB = day7_union.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day8_count1s
+
+
+#############################################
+# Order-only phony target for day8_count1s
+
+build cmake_object_order_depends_target_day8_count1s: phony || CMakeFiles/day8_count1s.dir
+
+build CMakeFiles/day8_count1s.dir/day8.cpp.obj: CXX_COMPILER__day8_count1s_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day8.cpp || cmake_object_order_depends_target_day8_count1s
+  DEP_FILE = CMakeFiles\day8_count1s.dir\day8.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day8_count1s.dir
+  OBJECT_FILE_DIR = CMakeFiles\day8_count1s.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day8_count1s
+
+
+#############################################
+# Link the executable day8_count1s.exe
+
+build day8_count1s.exe: CXX_EXECUTABLE_LINKER__day8_count1s_Debug CMakeFiles/day8_count1s.dir/day8.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day8_count1s.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day8_count1s.exe
+  TARGET_IMPLIB = libday8_count1s.dll.a
+  TARGET_PDB = day8_count1s.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day9_count_singles
+
+
+#############################################
+# Order-only phony target for day9_count_singles
+
+build cmake_object_order_depends_target_day9_count_singles: phony || CMakeFiles/day9_count_singles.dir
+
+build CMakeFiles/day9_count_singles.dir/day9.cpp.obj: CXX_COMPILER__day9_count_singles_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day9.cpp || cmake_object_order_depends_target_day9_count_singles
+  DEP_FILE = CMakeFiles\day9_count_singles.dir\day9.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day9_count_singles.dir
+  OBJECT_FILE_DIR = CMakeFiles\day9_count_singles.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day9_count_singles
+
+
+#############################################
+# Link the executable day9_count_singles.exe
+
+build day9_count_singles.exe: CXX_EXECUTABLE_LINKER__day9_count_singles_Debug CMakeFiles/day9_count_singles.dir/day9.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day9_count_singles.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day9_count_singles.exe
+  TARGET_IMPLIB = libday9_count_singles.dll.a
+  TARGET_PDB = day9_count_singles.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day10_longest_subarray
+
+
+#############################################
+# Order-only phony target for day10_longest_subarray
+
+build cmake_object_order_depends_target_day10_longest_subarray: phony || CMakeFiles/day10_longest_subarray.dir
+
+build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day10.cpp || cmake_object_order_depends_target_day10_longest_subarray
+  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\day10.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
+  OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day10_longest_subarray
+
+
+#############################################
+# Link the executable day10_longest_subarray.exe
+
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day10_longest_subarray.exe
+  TARGET_IMPLIB = libday10_longest_subarray.dll.a
+  TARGET_PDB = day10_longest_subarray.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -309,6 +468,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build day10_longest_subarray: phony day10_longest_subarray.exe
+
 build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
 
 build day4_remove_duplicates: phony day4_remove_duplicates.exe
@@ -316,6 +477,14 @@ build day4_remove_duplicates: phony day4_remove_duplicates.exe
 build day5_linear_search: phony day5_linear_search.exe
 
 build day5_move_zeros: phony day5_move_zeros.exe
+
+build day7_union: phony day7_union.exe
+
+build day8_count1s: phony day8_count1s.exe
+
+build day9_count_singles: phony day9_count_singles.exe
+
+build hash: phony hash.exe
 
 build stl: phony stl.exe
 
@@ -331,7 +500,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe
 
 # =============================================================================
 # Built-in targets
