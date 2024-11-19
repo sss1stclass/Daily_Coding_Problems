@@ -39,7 +39,6 @@ int getLongestSubarray(vector<int> &a, long long k) {
             maxLen++;  // for the total number of max array of subarray
         }
         right++;
-
     }
     return maxLen;
 }
