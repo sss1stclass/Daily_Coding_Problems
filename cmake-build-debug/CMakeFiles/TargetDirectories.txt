@@ -10,5 +10,6 @@ C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day7_union.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day8_count1s.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day9_count_singles.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day10_longest_subarray.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day_12_twosum.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
