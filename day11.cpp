@@ -18,11 +18,21 @@ void sortColors(vector<int> &nums) {
 //    zero.insert(zero.end(), one.begin(), one.end());
 //    zero.insert(zero.end(), two.begin(), two.end());
 //    nums = zero;
-    for (int i = 0; i < nums.size(); i++) {
-        for (int j = i + 1; j < nums.size(); j++) {
-            if (nums[i] > nums[j]) {
-                swap(nums[i], nums[j]);
-            }
+
+    int low = 0;
+    int mid = 0;
+    int high = nums.size() - 1;
+
+    while (mid < high) {
+        if (nums[mid] == 0) {
+            swap(nums[low], nums[mid]);
+            low++;
+            mid++;
+        } else if (nums[mid] == 2) {
+            swap(nums[mid], nums[high]);
+            high--;
+        } else {
+            mid++;
         }
     }
 }
