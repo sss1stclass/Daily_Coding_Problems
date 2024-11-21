@@ -47,8 +47,8 @@ int maxFrequency(vector<int> &nums, int k) {
 }
 
 int main() {
-    string s;
-    cin >> s;
+    string s = "aabaaaacaabc";
+//    cin >> s;
     int hash[26] = {0};
     for (int i = 0; i < s.size(); i++) {
         hash[s[i] - 'a']++;
@@ -56,12 +56,13 @@ int main() {
     for (auto i: hash) {
         cout << i << " ";
     }
-    int t;
-    cin >> t;
-    while (t--) {
-        char ch;
-        cin >> ch;
-        cout << hash[ch - 'a'];
-    }
+
+//    int t;
+//    cin >> t;
+//    while (t--) {
+//        char ch;
+//        cin >> ch;
+//        cout << hash[ch - 'a'];
+//    }
     return 0;
 }

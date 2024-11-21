@@ -449,6 +449,39 @@ build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_
   TARGET_PDB = day10_longest_subarray.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target day11_sort01
+
+
+#############################################
+# Order-only phony target for day11_sort01
+
+build cmake_object_order_depends_target_day11_sort01: phony || CMakeFiles/day11_sort01.dir
+
+build CMakeFiles/day11_sort01.dir/day11.cpp.obj: CXX_COMPILER__day11_sort01_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day11.cpp || cmake_object_order_depends_target_day11_sort01
+  DEP_FILE = CMakeFiles\day11_sort01.dir\day11.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day11_sort01.dir
+  OBJECT_FILE_DIR = CMakeFiles\day11_sort01.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day11_sort01
+
+
+#############################################
+# Link the executable day11_sort01.exe
+
+build day11_sort01.exe: CXX_EXECUTABLE_LINKER__day11_sort01_Debug CMakeFiles/day11_sort01.dir/day11.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day11_sort01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day11_sort01.exe
+  TARGET_IMPLIB = libday11_sort01.dll.a
+  TARGET_PDB = day11_sort01.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target day_12_twosum
 
 
@@ -509,6 +542,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build day10_longest_subarray: phony day10_longest_subarray.exe
 
+build day11_sort01: phony day11_sort01.exe
+
 build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
 
 build day4_remove_duplicates: phony day4_remove_duplicates.exe
@@ -541,7 +576,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day_12_twosum.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe
 
 # =============================================================================
 # Built-in targets
