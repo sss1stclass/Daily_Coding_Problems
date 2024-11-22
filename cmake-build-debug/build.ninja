@@ -199,6 +199,12 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj: CXX_COMPILER__day3_c
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
   OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
 
+build CMakeFiles/day3_check_sorted_arrya.dir/day13.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day13.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
+  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day13.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day3_check_sorted_arrya
@@ -207,7 +213,7 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj: CXX_COMPILER__day3_c
 #############################################
 # Link the executable day3_check_sorted_arrya.exe
 
-build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj
+build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day13.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
@@ -514,6 +520,39 @@ build day_12_twosum.exe: CXX_EXECUTABLE_LINKER__day_12_twosum_Debug CMakeFiles/d
   TARGET_IMPLIB = libday_12_twosum.dll.a
   TARGET_PDB = day_12_twosum.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_13_marjority
+
+
+#############################################
+# Order-only phony target for day_13_marjority
+
+build cmake_object_order_depends_target_day_13_marjority: phony || CMakeFiles/day_13_marjority.dir
+
+build CMakeFiles/day_13_marjority.dir/day13.cpp.obj: CXX_COMPILER__day_13_marjority_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day13.cpp || cmake_object_order_depends_target_day_13_marjority
+  DEP_FILE = CMakeFiles\day_13_marjority.dir\day13.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day_13_marjority.dir
+  OBJECT_FILE_DIR = CMakeFiles\day_13_marjority.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_13_marjority
+
+
+#############################################
+# Link the executable day_13_marjority.exe
+
+build day_13_marjority.exe: CXX_EXECUTABLE_LINKER__day_13_marjority_Debug CMakeFiles/day_13_marjority.dir/day13.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day_13_marjority.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day_13_marjority.exe
+  TARGET_IMPLIB = libday_13_marjority.dll.a
+  TARGET_PDB = day_13_marjority.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -560,6 +599,8 @@ build day9_count_singles: phony day9_count_singles.exe
 
 build day_12_twosum: phony day_12_twosum.exe
 
+build day_13_marjority: phony day_13_marjority.exe
+
 build hash: phony hash.exe
 
 build stl: phony stl.exe
@@ -576,7 +617,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe
 
 # =============================================================================
 # Built-in targets
