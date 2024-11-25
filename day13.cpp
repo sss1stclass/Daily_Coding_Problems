@@ -14,13 +14,30 @@ int majorityElement(vector<int> &nums) {
 //        }
 //    }
 
-    map<int, int> mappp;
+//    map<int, int> mappp;
+//    for (int i = 0; i < n; i++) {
+//        mappp[nums[i]]++;
+//    }
+//    for (auto it: mappp) {
+//        if (it.second > n / 2) {
+//            return it.first;
+//        }
+//    }
+    int elm;
+    int count = 0;
     for (int i = 0; i < n; i++) {
-        mappp[nums[i]]++;
+        if (count == 0) {
+            count = 1;
+            elm = nums[i];
+        } else if (nums[i] == elm) {
+            count++;
+        } else {
+            count--;
+        }
     }
-    for (auto it: mappp) {
-        if (it.second > n / 2) {
-            return it.first;
+    for (auto i: nums) {
+        if (nums[i] == elm) {
+            return i;
         }
     }
     return -1;

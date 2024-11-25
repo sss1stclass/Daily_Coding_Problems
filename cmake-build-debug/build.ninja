@@ -187,24 +187,6 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj: CXX_COMPILER__day3_ch
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
   OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
 
-build CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day10.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
-  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day10.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-
-build CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day12.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
-  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day12.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-
-build CMakeFiles/day3_check_sorted_arrya.dir/day13.cpp.obj: CXX_COMPILER__day3_check_sorted_arrya_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day13.cpp || cmake_object_order_depends_target_day3_check_sorted_arrya
-  DEP_FILE = CMakeFiles\day3_check_sorted_arrya.dir\day13.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-  OBJECT_FILE_DIR = CMakeFiles\day3_check_sorted_arrya.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day3_check_sorted_arrya
@@ -213,7 +195,7 @@ build CMakeFiles/day3_check_sorted_arrya.dir/day13.cpp.obj: CXX_COMPILER__day3_c
 #############################################
 # Link the executable day3_check_sorted_arrya.exe
 
-build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day10.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day12.cpp.obj CMakeFiles/day3_check_sorted_arrya.dir/day13.cpp.obj
+build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arrya_Debug CMakeFiles/day3_check_sorted_arrya.dir/day3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day3_check_sorted_arrya.dir
@@ -553,6 +535,39 @@ build day_13_marjority.exe: CXX_EXECUTABLE_LINKER__day_13_marjority_Debug CMakeF
   TARGET_IMPLIB = libday_13_marjority.dll.a
   TARGET_PDB = day_13_marjority.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day14_max_subarray
+
+
+#############################################
+# Order-only phony target for day14_max_subarray
+
+build cmake_object_order_depends_target_day14_max_subarray: phony || CMakeFiles/day14_max_subarray.dir
+
+build CMakeFiles/day14_max_subarray.dir/day14.cpp.obj: CXX_COMPILER__day14_max_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day14.cpp || cmake_object_order_depends_target_day14_max_subarray
+  DEP_FILE = CMakeFiles\day14_max_subarray.dir\day14.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day14_max_subarray.dir
+  OBJECT_FILE_DIR = CMakeFiles\day14_max_subarray.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day14_max_subarray
+
+
+#############################################
+# Link the executable day14_max_subarray.exe
+
+build day14_max_subarray.exe: CXX_EXECUTABLE_LINKER__day14_max_subarray_Debug CMakeFiles/day14_max_subarray.dir/day14.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day14_max_subarray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day14_max_subarray.exe
+  TARGET_IMPLIB = libday14_max_subarray.dll.a
+  TARGET_PDB = day14_max_subarray.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -582,6 +597,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build day10_longest_subarray: phony day10_longest_subarray.exe
 
 build day11_sort01: phony day11_sort01.exe
+
+build day14_max_subarray: phony day14_max_subarray.exe
 
 build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
 
@@ -617,7 +634,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe
 
 # =============================================================================
 # Built-in targets
