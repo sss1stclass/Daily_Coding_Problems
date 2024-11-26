@@ -32,6 +32,7 @@ int maxSubArray(vector<int> &nums) {
         }
     }
     return maxi;
+
 }
 
 int maxProfit(vector<int> &prices) {
