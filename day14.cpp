@@ -36,7 +36,6 @@ int maxSubArray(vector<int> &nums) {
 }
 
 int maxProfit(vector<int> &prices) {
-
     int n = prices.size();
     int maxlen = 0;
     for (int i = 0; i < n; i++) {
