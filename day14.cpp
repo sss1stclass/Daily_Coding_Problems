@@ -35,9 +35,24 @@ int maxSubArray(vector<int> &nums) {
 
 }
 
+int maxProfit(vector<int> &prices) {
+
+    int n = prices.size();
+    int maxlen = 0;
+    for (int i = 0; i < n; i++) {
+        int sum = 0;
+        for (int j = i + 1; j < n; j++) {
+            sum = prices[j] - prices[i];
+            maxlen = max(sum, maxlen);
+        }
+    }
+    return maxlen;
+}
+
 int main() {
-    vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    cout << maxSubArray(nums);
+    vector<int> nums = {7, 1, 5, 3, 6, 4};
+//    cout << maxSubArray(nums);
+    cout << maxProfit(nums);
     return 0;
 }
 
