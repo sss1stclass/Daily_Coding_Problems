@@ -46,10 +46,15 @@ int maxProfit(vector<int> &prices) {
     return maxlen;
 }
 
+vector<int> rearrangeArray(vector<int> &nums) {
+
+}
+
 int main() {
     vector<int> nums = {7, 1, 5, 3, 6, 4};
 //    cout << maxSubArray(nums);
-    cout << maxProfit(nums);
+//    cout << maxProfit(nums);
+    rearrangeArray(nums);
     return 0;
 }
 
