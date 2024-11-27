@@ -47,11 +47,28 @@ int maxProfit(vector<int> &prices) {
 }
 
 vector<int> rearrangeArray(vector<int> &nums) {
+    int n = nums.size();
+    vector<int> pos;
+    vector<int> neg;
+    vector<int> temp;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] > 0) {
+            pos.push_back(nums[i]);
+        } else {
+            neg.push_back(nums[i]);
+        }
+    }
+    for (int i = 0; i < n / 2; i++) {
+        temp.push_back(pos[i]);
+        temp.push_back(neg[i]);
+    }
+    nums = temp;
 
+    return nums;
 }
 
 int main() {
-    vector<int> nums = {7, 1, 5, 3, 6, 4};
+    vector<int> nums = {3, 1, -2, -5, 2, -4};
 //    cout << maxSubArray(nums);
 //    cout << maxProfit(nums);
     rearrangeArray(nums);
