@@ -67,11 +67,22 @@ vector<int> rearrangeArray(vector<int> &nums) {
     return nums;
 }
 
+void nextPermutation(vector<int> &nums) {
+
+    next_permutation(nums.begin(), nums.end());
+
+}
+
 int main() {
-    vector<int> nums = {3, 1, -2, -5, 2, -4};
+    vector<int> nums = {1, 2, 5, 4, 3, 0, 0};
 //    cout << maxSubArray(nums);
 //    cout << maxProfit(nums);
-    rearrangeArray(nums);
+//    rearrangeArray(nums);
+    nextPermutation(nums);
+    for (auto i: nums) {
+        cout << i << " ";
+    }
+
     return 0;
 }
 
