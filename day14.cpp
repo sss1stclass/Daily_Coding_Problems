@@ -68,9 +68,7 @@ vector<int> rearrangeArray(vector<int> &nums) {
 }
 
 void nextPermutation(vector<int> &nums) {
-
     next_permutation(nums.begin(), nums.end());
-
 }
 
 int main() {
