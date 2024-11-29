@@ -71,12 +71,25 @@ void nextPermutation(vector<int> &nums) {
     next_permutation(nums.begin(), nums.end());
 }
 
+vector<int> leaders(vector<int> &arr) {
+    // Code here
+    vector<int> temp;
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i] >= arr[i + 1]) {
+            temp.push_back(arr[i]);
+        }
+    }
+    arr = temp;
+    return arr;
+}
+
 int main() {
-    vector<int> nums = {1, 2, 5, 4, 3, 0, 0};
+    vector<int> nums = {16, 17, 4, 3, 5, 2};
 //    cout << maxSubArray(nums);
 //    cout << maxProfit(nums);
 //    rearrangeArray(nums);
-    nextPermutation(nums);
+//    nextPermutation(nums);
+    leaders(nums);
     for (auto i: nums) {
         cout << i << " ";
     }
