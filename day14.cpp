@@ -73,23 +73,32 @@ void nextPermutation(vector<int> &nums) {
 
 vector<int> leaders(vector<int> &arr) {
     // Code here
+    int maxLeader = INT_MIN;
     vector<int> temp;
-    for (int i = 0; i < arr.size(); i++) {
-        if (arr[i] >= arr[i + 1]) {
+    int n = arr.size();
+    for (int i = n - 1; i >= 0; i--) {
+        if (arr[i] >= maxLeader) {
             temp.push_back(arr[i]);
         }
+        maxLeader = max(maxLeader, arr[i]);
     }
+    reverse(temp.begin(), temp.end());
     arr = temp;
     return arr;
 }
 
+int longestConsecutive(vector<int> &nums) {
+
+}
+
 int main() {
-    vector<int> nums = {16, 17, 4, 3, 5, 2};
+    vector<int> nums = {100, 4, 200, 1, 3, 2};
 //    cout << maxSubArray(nums);
 //    cout << maxProfit(nums);
 //    rearrangeArray(nums);
 //    nextPermutation(nums);
-    leaders(nums);
+    longestConsecutive(nums);
+//    leaders(nums);
     for (auto i: nums) {
         cout << i << " ";
     }
