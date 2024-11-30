@@ -88,7 +88,18 @@ vector<int> leaders(vector<int> &arr) {
 }
 
 int longestConsecutive(vector<int> &nums) {
-
+    sort(nums.begin(), nums.end());
+    int n = nums.size();
+    int counter = 1;
+    int maxLen = 0;
+    if (n == 0) return 0;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] == nums[i + 1] - 1) {
+            counter++;
+            maxLen = max(counter, maxLen);
+        }
+    }
+    return maxLen;
 }
 
 int main() {
@@ -97,11 +108,11 @@ int main() {
 //    cout << maxProfit(nums);
 //    rearrangeArray(nums);
 //    nextPermutation(nums);
-    longestConsecutive(nums);
+    cout << longestConsecutive(nums);
 //    leaders(nums);
-    for (auto i: nums) {
-        cout << i << " ";
-    }
+//    for (auto i: nums) {
+//        cout << i << " ";
+//    }
 
     return 0;
 }

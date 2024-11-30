@@ -206,6 +206,39 @@ build day3_check_sorted_arrya.exe: CXX_EXECUTABLE_LINKER__day3_check_sorted_arry
   TARGET_PDB = day3_check_sorted_arrya.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target setDataStructure
+
+
+#############################################
+# Order-only phony target for setDataStructure
+
+build cmake_object_order_depends_target_setDataStructure: phony || CMakeFiles/setDataStructure.dir
+
+build CMakeFiles/setDataStructure.dir/setDataStructure.cpp.obj: CXX_COMPILER__setDataStructure_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/setDataStructure.cpp || cmake_object_order_depends_target_setDataStructure
+  DEP_FILE = CMakeFiles\setDataStructure.dir\setDataStructure.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\setDataStructure.dir
+  OBJECT_FILE_DIR = CMakeFiles\setDataStructure.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target setDataStructure
+
+
+#############################################
+# Link the executable setDataStructure.exe
+
+build setDataStructure.exe: CXX_EXECUTABLE_LINKER__setDataStructure_Debug CMakeFiles/setDataStructure.dir/setDataStructure.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\setDataStructure.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = setDataStructure.exe
+  TARGET_IMPLIB = libsetDataStructure.dll.a
+  TARGET_PDB = setDataStructure.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target day4_remove_duplicates
 
 
@@ -418,6 +451,12 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
 
+build CMakeFiles/day10_longest_subarray.dir/setDataStructure.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/setDataStructure.cpp || cmake_object_order_depends_target_day10_longest_subarray
+  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\setDataStructure.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
+  OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day10_longest_subarray
@@ -426,7 +465,7 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
 #############################################
 # Link the executable day10_longest_subarray.exe
 
-build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/setDataStructure.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -620,6 +659,8 @@ build day_13_marjority: phony day_13_marjority.exe
 
 build hash: phony hash.exe
 
+build setDataStructure: phony setDataStructure.exe
+
 build stl: phony stl.exe
 
 build test: phony test.exe
@@ -634,7 +675,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe
 
 # =============================================================================
 # Built-in targets
