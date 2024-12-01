@@ -15,5 +15,6 @@ C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day11_sort01.di
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day_12_twosum.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day_13_marjority.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day14_max_subarray.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day15_matrix.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
