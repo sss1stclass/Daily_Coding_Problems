@@ -81,10 +81,17 @@ void setZeroes(vector<vector<int>> &matrix, int n, int m) {
 void rotate(vector<vector<int>> &matrix) {
     int n = matrix.size();
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 1; j < n; j++) {
+        for (int j = i + 1; j < n; j++) {
             swap(matrix[i][j], matrix[j][i]);
         }
     }
+    for (auto it: matrix) {
+        for (auto ele: it) {
+            cout << ele << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
     for (int i = 0; i < n; i++) {
         reverse(matrix[i].begin(), matrix[i].end());
     }
@@ -99,12 +106,21 @@ void rotate(vector<vector<int>> &matrix) {
 }
 
 int main() {
-    vector<vector<int>> matrix = {{1, 2, 3},
-                                  {4, 0, 6},
-                                  {7, 8, 9}};
+    vector<vector<int>> matrix = {{5,  1,  9,  11},
+                                  {2,  4,  8,  10},
+                                  {13, 3,  6,  7},
+                                  {15, 14, 12, 16}};
     int n = matrix.size();
     int m = matrix[0].size();
-    setZeroes(matrix, n, m);
+//    setZeroes(matrix, n, m);
+    for (auto it: matrix) {
+        for (auto ele: it) {
+            cout << ele << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    rotate(matrix);
     return 0;
 }
 
