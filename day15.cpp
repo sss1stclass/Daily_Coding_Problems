@@ -85,13 +85,6 @@ void rotate(vector<vector<int>> &matrix) {
             swap(matrix[i][j], matrix[j][i]);
         }
     }
-    for (auto it: matrix) {
-        for (auto ele: it) {
-            cout << ele << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
     for (int i = 0; i < n; i++) {
         reverse(matrix[i].begin(), matrix[i].end());
     }
@@ -105,6 +98,10 @@ void rotate(vector<vector<int>> &matrix) {
 
 }
 
+vector<int> spiralOrder(vector<vector<int>> &matrix) {
+
+}
+
 int main() {
     vector<vector<int>> matrix = {{5,  1,  9,  11},
                                   {2,  4,  8,  10},
@@ -113,14 +110,8 @@ int main() {
     int n = matrix.size();
     int m = matrix[0].size();
 //    setZeroes(matrix, n, m);
-    for (auto it: matrix) {
-        for (auto ele: it) {
-            cout << ele << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-    rotate(matrix);
+//    rotate(matrix);
+    spiralOrder(matrix);
     return 0;
 }
 
