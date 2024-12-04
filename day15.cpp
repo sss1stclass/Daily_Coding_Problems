@@ -143,7 +143,8 @@ int main() {
     int m = matrix[0].size();
 //    setZeroes(matrix, n, m);
 //    rotate(matrix);
-    spiralOrder(matrix);
+//    spiralOrder(matrix);
+    cout << matrix[1][0];
     return 0;
 }
 
