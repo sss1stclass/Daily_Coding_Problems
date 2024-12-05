@@ -46,7 +46,7 @@ int getLongestSubarray(vector<int> &a, long long k) {
 
 
 int main() {
-    vector<int> arr = {1};
+    vector<int> arr = {1, 1, 1};
     int k = 0;
     cout << getLongestSubarray(arr, k);
 

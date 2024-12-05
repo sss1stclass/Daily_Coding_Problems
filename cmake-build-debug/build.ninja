@@ -451,8 +451,8 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
 
-build CMakeFiles/day10_longest_subarray.dir/setDataStructure.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/setDataStructure.cpp || cmake_object_order_depends_target_day10_longest_subarray
-  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\setDataStructure.cpp.obj.d
+build CMakeFiles/day10_longest_subarray.dir/maximumSubArray_day16.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/maximumSubArray_day16.cpp || cmake_object_order_depends_target_day10_longest_subarray
+  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\maximumSubArray_day16.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -465,7 +465,7 @@ build CMakeFiles/day10_longest_subarray.dir/setDataStructure.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable day10_longest_subarray.exe
 
-build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/setDataStructure.cpp.obj
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/maximumSubArray_day16.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -640,6 +640,39 @@ build day15_matrix.exe: CXX_EXECUTABLE_LINKER__day15_matrix_Debug CMakeFiles/day
   TARGET_IMPLIB = libday15_matrix.dll.a
   TARGET_PDB = day15_matrix.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target maximumSubArray_day16
+
+
+#############################################
+# Order-only phony target for maximumSubArray_day16
+
+build cmake_object_order_depends_target_maximumSubArray_day16: phony || CMakeFiles/maximumSubArray_day16.dir
+
+build CMakeFiles/maximumSubArray_day16.dir/maximumSubArray_day16.cpp.obj: CXX_COMPILER__maximumSubArray_day16_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/maximumSubArray_day16.cpp || cmake_object_order_depends_target_maximumSubArray_day16
+  DEP_FILE = CMakeFiles\maximumSubArray_day16.dir\maximumSubArray_day16.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\maximumSubArray_day16.dir
+  OBJECT_FILE_DIR = CMakeFiles\maximumSubArray_day16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target maximumSubArray_day16
+
+
+#############################################
+# Link the executable maximumSubArray_day16.exe
+
+build maximumSubArray_day16.exe: CXX_EXECUTABLE_LINKER__maximumSubArray_day16_Debug CMakeFiles/maximumSubArray_day16.dir/maximumSubArray_day16.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\maximumSubArray_day16.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = maximumSubArray_day16.exe
+  TARGET_IMPLIB = libmaximumSubArray_day16.dll.a
+  TARGET_PDB = maximumSubArray_day16.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -694,6 +727,8 @@ build day_13_marjority: phony day_13_marjority.exe
 
 build hash: phony hash.exe
 
+build maximumSubArray_day16: phony maximumSubArray_day16.exe
+
 build setDataStructure: phony setDataStructure.exe
 
 build stl: phony stl.exe
@@ -710,7 +745,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe
 
 # =============================================================================
 # Built-in targets
