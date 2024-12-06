@@ -17,5 +17,6 @@ C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day_13_marjorit
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day14_max_subarray.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day15_matrix.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/maximumSubArray_day16.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day16_PascalTriangle.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
