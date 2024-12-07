@@ -96,14 +96,27 @@ vector<int> searchRange(vector<int> &nums, int target) {
 
 }
 
+int countFreq(vector<int> &arr, int target) {
+    // code here
+    int n = arr.size();
+    int lb = lowerBound(arr, n, target);
+    if (lb == n || arr[lb] != target) {
+        return 0;
+    }
+    int ans = (upperBound(arr, n, target) - 1) - lb + 1;
+    return ans;
+}
+
 
 int main() {
-    vector<int> nums = {5, 7, 7, 8, 8, 10};
+    vector<int> nums = {5, 7, 7, 8, 8, 8, 8, 8, 10};
     int target = 8;
     vector<int> ans = searchRange(nums, target);
     for (auto it: ans) {
         cout << it << " ";
     }
+    cout << endl;
+    cout << countFreq(nums, target);
 
     return 0;
 }
