@@ -451,12 +451,6 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
 
-build CMakeFiles/day10_longest_subarray.dir/day17_BS.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day17_BS.cpp || cmake_object_order_depends_target_day10_longest_subarray
-  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\day17_BS.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
-  OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day10_longest_subarray
@@ -465,7 +459,7 @@ build CMakeFiles/day10_longest_subarray.dir/day17_BS.cpp.obj: CXX_COMPILER__day1
 #############################################
 # Link the executable day10_longest_subarray.exe
 
-build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/day17_BS.cpp.obj
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -739,6 +733,39 @@ build day17_BS.exe: CXX_EXECUTABLE_LINKER__day17_BS_Debug CMakeFiles/day17_BS.di
   TARGET_IMPLIB = libday17_BS.dll.a
   TARGET_PDB = day17_BS.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day18
+
+
+#############################################
+# Order-only phony target for day18
+
+build cmake_object_order_depends_target_day18: phony || CMakeFiles/day18.dir
+
+build CMakeFiles/day18.dir/day18.cpp.obj: CXX_COMPILER__day18_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day18.cpp || cmake_object_order_depends_target_day18
+  DEP_FILE = CMakeFiles\day18.dir\day18.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day18.dir
+  OBJECT_FILE_DIR = CMakeFiles\day18.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day18
+
+
+#############################################
+# Link the executable day18.exe
+
+build day18.exe: CXX_EXECUTABLE_LINKER__day18_Debug CMakeFiles/day18.dir/day18.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day18.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day18.exe
+  TARGET_IMPLIB = libday18.dll.a
+  TARGET_PDB = day18.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -776,6 +803,8 @@ build day15_matrix: phony day15_matrix.exe
 build day16_PascalTriangle: phony day16_PascalTriangle.exe
 
 build day17_BS: phony day17_BS.exe
+
+build day18: phony day18.exe
 
 build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
 
@@ -815,7 +844,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe
 
 # =============================================================================
 # Built-in targets
