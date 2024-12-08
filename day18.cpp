@@ -107,11 +107,23 @@ int countFreq(vector<int> &arr, int target) {
     return ans;
 }
 
+int minOperations(vector<int> &nums, int k) {
+    int n = nums.size();
+    int counter = 0;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] < k) {
+            counter++;
+        }
+    }
+    return counter;
+}
+
 
 int main() {
     vector<int> nums = {5, 7, 7, 8, 8, 8, 8, 8, 10};
     int target = 8;
     vector<int> ans = searchRange(nums, target);
+    cout << minOperations(nums, target) << endl;
     for (auto it: ans) {
         cout << it << " ";
     }
