@@ -20,5 +20,6 @@ C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/maximumSubArray
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day16_PascalTriangle.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day17_BS.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day18.dir
+C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/day19_rotatedArray.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

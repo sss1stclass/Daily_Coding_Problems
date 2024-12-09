@@ -451,6 +451,12 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
 
+build CMakeFiles/day10_longest_subarray.dir/day19_rotatedArray.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day19_rotatedArray.cpp || cmake_object_order_depends_target_day10_longest_subarray
+  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\day19_rotatedArray.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
+  OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day10_longest_subarray
@@ -459,7 +465,7 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
 #############################################
 # Link the executable day10_longest_subarray.exe
 
-build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/day19_rotatedArray.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -766,6 +772,39 @@ build day18.exe: CXX_EXECUTABLE_LINKER__day18_Debug CMakeFiles/day18.dir/day18.c
   TARGET_IMPLIB = libday18.dll.a
   TARGET_PDB = day18.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day19_rotatedArray
+
+
+#############################################
+# Order-only phony target for day19_rotatedArray
+
+build cmake_object_order_depends_target_day19_rotatedArray: phony || CMakeFiles/day19_rotatedArray.dir
+
+build CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj: CXX_COMPILER__day19_rotatedArray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day19_rotatedArray.cpp || cmake_object_order_depends_target_day19_rotatedArray
+  DEP_FILE = CMakeFiles\day19_rotatedArray.dir\day19_rotatedArray.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\day19_rotatedArray.dir
+  OBJECT_FILE_DIR = CMakeFiles\day19_rotatedArray.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day19_rotatedArray
+
+
+#############################################
+# Link the executable day19_rotatedArray.exe
+
+build day19_rotatedArray.exe: CXX_EXECUTABLE_LINKER__day19_rotatedArray_Debug CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\day19_rotatedArray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = day19_rotatedArray.exe
+  TARGET_IMPLIB = libday19_rotatedArray.dll.a
+  TARGET_PDB = day19_rotatedArray.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -806,6 +845,8 @@ build day17_BS: phony day17_BS.exe
 
 build day18: phony day18.exe
 
+build day19_rotatedArray: phony day19_rotatedArray.exe
+
 build day3_check_sorted_arrya: phony day3_check_sorted_arrya.exe
 
 build day4_remove_duplicates: phony day4_remove_duplicates.exe
@@ -844,7 +885,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe
 
 # =============================================================================
 # Built-in targets
