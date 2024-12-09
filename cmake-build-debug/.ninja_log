@@ -46,3 +46,17 @@
 1635	1750	7549915361252291	maximumSubArray_day16.exe	69c690603a37ca6a
 4	1790	7551625404168115	CMakeFiles/day16_PascalTriangle.dir/day16_PascalTriangle.cpp.obj	e0412e012664628a
 4447	5965	7553498478654265	day18.exe	93195f08058f58be
+1	2308	7554218434153486	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+2308	2770	7554218438684498	day19_rotatedArray.exe	a89cee40a82e1727
+4	3772	7554222898238995	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+3775	4259	7554222903239515	day19_rotatedArray.exe	a89cee40a82e1727
+4	1322	7554223378007031	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+1323	1527	7554223380038838	day19_rotatedArray.exe	a89cee40a82e1727
+2	1246	7554223547260539	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+1246	1363	7554223548354554	day19_rotatedArray.exe	a89cee40a82e1727
+4	1479	7554224591870488	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+1480	1619	7554224593278959	day19_rotatedArray.exe	a89cee40a82e1727
+4	1289	7554224938778270	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+1290	1422	7554224940028493	day19_rotatedArray.exe	a89cee40a82e1727
+4	1211	7554225030901567	CMakeFiles/day19_rotatedArray.dir/day19_rotatedArray.cpp.obj	5e9dc8e047a6fc93
+1212	1329	7554225031995847	day19_rotatedArray.exe	a89cee40a82e1727
