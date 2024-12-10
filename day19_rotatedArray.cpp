@@ -35,14 +35,21 @@ int search(vector<int> &nums, int target) {
 
 }
 
-int main() {
-    vector<int> nums = {2, 5, 6, 0, 0, 1, 2};
-    unordered_set<int> s(nums.begin(), nums.end());
-    for (auto it: s) {
-        cout << it << " ";
+int findMin(vector<int> &nums) {
+    int min = nums[0];
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] <= min) {
+            min = nums[i];
+        }
     }
-    int target = 0;
-    cout << search(nums, target);
+    return min;
+}
+
+int main() {
+    vector<int> nums = {3, 4, 5, 1, 2, 0};
+    cout << findMin(nums);
+//    int target = 0;
+//    cout << search(nums, target);
 
     return 0;
 }
