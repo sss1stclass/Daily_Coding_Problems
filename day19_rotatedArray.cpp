@@ -36,13 +36,21 @@ int search(vector<int> &nums, int target) {
 }
 
 int findMin(vector<int> &nums) {
-    int min = nums[0];
-    for (int i = 0; i < nums.size(); i++) {
-        if (nums[i] <= min) {
-            min = nums[i];
+    int n = nums.size();
+    int mini = INT_MAX;
+    int high = n - 1;
+    int low = 0;
+    while (high >= low) {
+        int mid = (high + low) / 2;
+        if (nums[low] <= nums[mid]) {
+            mini = min(nums[low], mini);
+            low = mid + 1;
+        } else {
+            mini = min(nums[mid], mini);
+            high = mid - 1;
         }
     }
-    return min;
+    return mini;
 }
 
 int main() {
