@@ -21,14 +21,12 @@ int search(vector<int> &nums, int target) {
             } else {
                 low = mid + 1;
             }
-            cout << nums[mid] << "less" << endl;
         } else {
             if (nums[high] >= target && nums[mid] <= target) {
                 low = mid + 1;
             } else {
                 high = mid - 1;
             }
-            cout << nums[mid] << "high" << endl;
         }
     }
     return -1;
@@ -53,11 +51,39 @@ int findMin(vector<int> &nums) {
     return mini;
 }
 
+int singleNonDuplicate(vector<int> &arr) {
+    int n = arr.size(); //size of the array.
+
+    //Edge cases:
+    if (n == 1) return arr[0];
+    if (arr[0] != arr[1]) return arr[0];
+    if (arr[n - 1] != arr[n - 2]) return arr[n - 1];
+
+    int low = 1, high = n - 2;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (arr[mid] != arr[mid + 1] && arr[mid] != arr[mid - 1]) {
+            return arr[mid];
+        }
+        if ((mid % 2 == 1 && arr[mid] == arr[mid - 1])
+            || (mid % 2 == 0 && arr[mid] == arr[mid + 1])) {
+            low = mid + 1;
+        } else {
+
+            high = mid - 1;
+        }
+    }
+
+    // dummy return statement:
+    return -1;
+}
+
 int main() {
-    vector<int> nums = {3, 4, 5, 1, 2, 0};
-    cout << findMin(nums);
-//    int target = 0;
+    vector<int> nums = {1, 1, 2, 3, 3, 4, 4, 8, 8, 9, 9};
+//    cout << findMin(nums);
+//    int target = findMin(nums);
 //    cout << search(nums, target);
+    cout << singleNonDuplicate(nums);
 
     return 0;
 }
