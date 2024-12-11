@@ -78,12 +78,23 @@ int singleNonDuplicate(vector<int> &arr) {
     return -1;
 }
 
+int findPeakElement(vector<int> &nums) {
+    int n = nums.size();
+    if (n == 1) return nums[0];
+    for (int i = 0; i <= n; i++) {
+        if (nums[i] > nums[i - 1] && nums[i] > nums[i + 1]) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 int main() {
-    vector<int> nums = {1, 1, 2, 3, 3, 4, 4, 8, 8, 9, 9};
+    vector<int> nums = {1, 2, 1, 3, 5, 6, 4};
 //    cout << findMin(nums);
 //    int target = findMin(nums);
 //    cout << search(nums, target);
-    cout << singleNonDuplicate(nums);
-
+//    cout << singleNonDuplicate(nums);
+    cout << findPeakElement(nums);
     return 0;
 }
