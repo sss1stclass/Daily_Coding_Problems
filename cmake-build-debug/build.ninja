@@ -451,12 +451,6 @@ build CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj: CXX_COMPILER__day10_l
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
   OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
 
-build CMakeFiles/day10_longest_subarray.dir/day19_rotatedArray.cpp.obj: CXX_COMPILER__day10_longest_subarray_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/day19_rotatedArray.cpp || cmake_object_order_depends_target_day10_longest_subarray
-  DEP_FILE = CMakeFiles\day10_longest_subarray.dir\day19_rotatedArray.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
-  OBJECT_FILE_DIR = CMakeFiles\day10_longest_subarray.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target day10_longest_subarray
@@ -465,7 +459,7 @@ build CMakeFiles/day10_longest_subarray.dir/day19_rotatedArray.cpp.obj: CXX_COMP
 #############################################
 # Link the executable day10_longest_subarray.exe
 
-build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj CMakeFiles/day10_longest_subarray.dir/day19_rotatedArray.cpp.obj
+build day10_longest_subarray.exe: CXX_EXECUTABLE_LINKER__day10_longest_subarray_Debug CMakeFiles/day10_longest_subarray.dir/day10.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\day10_longest_subarray.dir
@@ -838,6 +832,39 @@ build bs_medium_sqrt.exe: CXX_EXECUTABLE_LINKER__bs_medium_sqrt_Debug CMakeFiles
   TARGET_IMPLIB = libbs_medium_sqrt.dll.a
   TARGET_PDB = bs_medium_sqrt.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target kokoEatingBanana_bs
+
+
+#############################################
+# Order-only phony target for kokoEatingBanana_bs
+
+build cmake_object_order_depends_target_kokoEatingBanana_bs: phony || CMakeFiles/kokoEatingBanana_bs.dir
+
+build CMakeFiles/kokoEatingBanana_bs.dir/kokoEatingBanana_bs.cpp.obj: CXX_COMPILER__kokoEatingBanana_bs_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/kokoEatingBanana_bs.cpp || cmake_object_order_depends_target_kokoEatingBanana_bs
+  DEP_FILE = CMakeFiles\kokoEatingBanana_bs.dir\kokoEatingBanana_bs.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\kokoEatingBanana_bs.dir
+  OBJECT_FILE_DIR = CMakeFiles\kokoEatingBanana_bs.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target kokoEatingBanana_bs
+
+
+#############################################
+# Link the executable kokoEatingBanana_bs.exe
+
+build kokoEatingBanana_bs.exe: CXX_EXECUTABLE_LINKER__kokoEatingBanana_bs_Debug CMakeFiles/kokoEatingBanana_bs.dir/kokoEatingBanana_bs.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\kokoEatingBanana_bs.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = kokoEatingBanana_bs.exe
+  TARGET_IMPLIB = libkokoEatingBanana_bs.dll.a
+  TARGET_PDB = kokoEatingBanana_bs.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -902,6 +929,8 @@ build day_13_marjority: phony day_13_marjority.exe
 
 build hash: phony hash.exe
 
+build kokoEatingBanana_bs: phony kokoEatingBanana_bs.exe
+
 build maximumSubArray_day16: phony maximumSubArray_day16.exe
 
 build setDataStructure: phony setDataStructure.exe
@@ -920,7 +949,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe kokoEatingBanana_bs.exe
 
 # =============================================================================
 # Built-in targets
