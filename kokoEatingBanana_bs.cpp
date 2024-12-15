@@ -43,6 +43,10 @@ int minEatingSpeed(vector<int> &piles, int h) {
     return ans;
 }
 
+int smallestDivisor(vector<int> &nums, int threshold) {
+
+}
+
 int main() {
     vector<int> piles = {30, 11, 23, 4, 20};
     int h = 5;
