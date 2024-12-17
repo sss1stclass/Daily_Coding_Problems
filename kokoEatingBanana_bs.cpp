@@ -45,39 +45,70 @@ int minEatingSpeed(vector<int> &piles, int h) {
     return ans;
 }
 
-int minDays(vector<int> &bloomDay, int m, int k) {
-    int n = *max_element(bloomDay.begin(), bloomDay.end());
-    int s = bloomDay.size();
-    int ans = 0;
-    for (int i = 0; i <= n; i++) {
+//int minDays(vector<int> &bloomDay, int m, int k) {
+//    int n = *max_element(bloomDay.begin(), bloomDay.end());
+//    int s = bloomDay.size();
+//    int ans = 0;
+//    for (int i = 0; i <= n; i++) {
+//
+//        for (int j = 0; j < s; j++) {
+//            if (bloomDay[j] == i) {
+//                bloomDay[j] = -1;
+//            }
+//        }
+//        int count = 0;
+//        for (int k = 0; k < s; k++) {
+//            if (bloomDay[k] == bloomDay[k + 1]) {
+//                count++;
+//            }
+//        }
+//        if ((m / count) >= 1) {
+//            ans++;
+//        }
+//        if (ans == k) {
+//            return i;
+//        }
+//
+//    }
+//
+//    return ans;
+//}
 
-        for (int j = 0; j < s; j++) {
-            if (bloomDay[j] == i) {
-                bloomDay[j] = -1;
-            }
+bool possible(vector<int> &arr, int day, int m, int k) {
+    int n = arr.size(); //size of the array
+    int cnt = 0;
+    int noOfB = 0;
+    // count the number of bouquets:
+    for (int i = 0; i < n; i++) {
+        if (arr[i] <= day) {
+            cnt++;
+        } else {
+            noOfB += (cnt / k);
+            cnt = 0;
         }
-        int count = 0;
-        for (int k = 0; k < s; k++) {
-            if (bloomDay[k] == bloomDay[k + 1]) {
-                count++;
-            }
-        }
-        if ((m / count) >= 1) {
-            ans++;
-        }
-        if (ans == k) {
-            return i;
-        }
-
     }
+    noOfB += (cnt / k);
+    return noOfB >= m;
+}
 
-    return ans;
+int minDays(vector<int> arr, int k, int m) {
+    long long val = m * 1ll * k * 1ll;
+    int n = arr.size(); //size of the array
+    if (val > n) return -1; //impossible case.
+    int low = *min_element(arr.begin(), arr.end()), high = *max_element(arr.begin(), arr.end());
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (possible(arr, mid, k, m)) {
+            high = mid - 1;
+        } else low = mid + 1;
+    }
+    return low;
 }
 
 int main() {
-    vector<int> piles = {7, 7, 7, 7, 13, 11, 12, 7};
+    vector<int> piles = {1, 10, 3, 10, 2};
     int h = 5;
 //    cout << minEatingSpeed(piles, h);
-    cout << minDays(piles, 2, 3);
+    cout << minDays(piles, 3, 1);
     return 0;
 }
