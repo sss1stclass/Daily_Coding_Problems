@@ -36,20 +36,48 @@ int minEatingSpeed(vector<int> &piles, int h) {
         if (calculateTotalHours(piles, mid) <= h) {
             ans = mid;
             high = mid - 1;
+            cout << "high" << high << endl;
         } else {
             low = mid + 1;
+            cout << "low" << low << endl;
         }
     }
     return ans;
 }
 
-int smallestDivisor(vector<int> &nums, int threshold) {
+int minDays(vector<int> &bloomDay, int m, int k) {
+    int n = *max_element(bloomDay.begin(), bloomDay.end());
+    int s = bloomDay.size();
+    int ans = 0;
+    for (int i = 0; i <= n; i++) {
 
+        for (int j = 0; j < s; j++) {
+            if (bloomDay[j] == i) {
+                bloomDay[j] = -1;
+            }
+        }
+        int count = 0;
+        for (int k = 0; k < s; k++) {
+            if (bloomDay[k] == bloomDay[k + 1]) {
+                count++;
+            }
+        }
+        if ((m / count) >= 1) {
+            ans++;
+        }
+        if (ans == k) {
+            return i;
+        }
+
+    }
+
+    return ans;
 }
 
 int main() {
-    vector<int> piles = {30, 11, 23, 4, 20};
+    vector<int> piles = {7, 7, 7, 7, 13, 11, 12, 7};
     int h = 5;
-    cout << minEatingSpeed(piles, h);
+//    cout << minEatingSpeed(piles, h);
+    cout << minDays(piles, 2, 3);
     return 0;
 }
