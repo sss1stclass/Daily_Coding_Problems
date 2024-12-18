@@ -38,8 +38,10 @@ int countNoOfDays(vector<int> weights, int cap) {
 }
 
 int shipWithinDays(vector<int> &weights, int days) {
-    int low = maxEleme(weights);
-    int high = countTotal(weights);
+//    int low = maxEleme(weights);
+//    int high = countTotal(weights);
+    int low = *max_element(weights.begin(), weights.end());
+    int high = accumulate(weights.begin(), weights.end(), 0); // we can use stl to collect such data;
     while (high >= low) {
         int mid = (high + low) / 2;
         if (countNoOfDays(weights, mid) <= days) {
