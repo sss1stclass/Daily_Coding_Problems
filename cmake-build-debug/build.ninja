@@ -865,6 +865,39 @@ build kokoEatingBanana_bs.exe: CXX_EXECUTABLE_LINKER__kokoEatingBanana_bs_Debug 
   TARGET_IMPLIB = libkokoEatingBanana_bs.dll.a
   TARGET_PDB = kokoEatingBanana_bs.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target shipping_containers
+
+
+#############################################
+# Order-only phony target for shipping_containers
+
+build cmake_object_order_depends_target_shipping_containers: phony || CMakeFiles/shipping_containers.dir
+
+build CMakeFiles/shipping_containers.dir/shipping_containers.cpp.obj: CXX_COMPILER__shipping_containers_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/shipping_containers.cpp || cmake_object_order_depends_target_shipping_containers
+  DEP_FILE = CMakeFiles\shipping_containers.dir\shipping_containers.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\shipping_containers.dir
+  OBJECT_FILE_DIR = CMakeFiles\shipping_containers.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shipping_containers
+
+
+#############################################
+# Link the executable shipping_containers.exe
+
+build shipping_containers.exe: CXX_EXECUTABLE_LINKER__shipping_containers_Debug CMakeFiles/shipping_containers.dir/shipping_containers.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\shipping_containers.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = shipping_containers.exe
+  TARGET_IMPLIB = libshipping_containers.dll.a
+  TARGET_PDB = shipping_containers.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -935,6 +968,8 @@ build maximumSubArray_day16: phony maximumSubArray_day16.exe
 
 build setDataStructure: phony setDataStructure.exe
 
+build shipping_containers: phony shipping_containers.exe
+
 build stl: phony stl.exe
 
 build test: phony test.exe
@@ -949,7 +984,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe kokoEatingBanana_bs.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe kokoEatingBanana_bs.exe shipping_containers.exe
 
 # =============================================================================
 # Built-in targets
