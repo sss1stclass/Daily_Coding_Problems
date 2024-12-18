@@ -22,6 +22,7 @@ int maxEleme(vector<int> v) {
     return maxi;
 }
 
+
 int countNoOfDays(vector<int> weights, int cap) {
     int n = weights.size();
     int days = 1;
@@ -36,6 +37,22 @@ int countNoOfDays(vector<int> weights, int cap) {
     }
     return days;
 }
+
+// brute force approach
+
+int minWeight(vector<int> weights, int d) {
+    int maxi = *max_element(weights.begin(), weights.end());
+    int sum = accumulate(weights.begin(), weights.end(), 0);
+
+    for (int i = maxi; i <= sum; i++) {
+        if (countNoOfDays(weights, i) <= d) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+// best and optimal with bs
 
 int shipWithinDays(vector<int> &weights, int days) {
 //    int low = maxEleme(weights);
