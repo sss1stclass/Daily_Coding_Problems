@@ -71,22 +71,22 @@ int shipWithinDays(vector<int> &weights, int days) {
 
 }
 
-int findKthPositive(vector<int> &arr, int k) {
-    vector<int> temp;
-    for (int i = 1; i <= 13; i++) {
-        bool found = false;
-        for (int j = 0; j < arr.size(); j++) {
-            if (arr[j] == i) {
-                found = true;
-            }
-        }
-        if (found == false) {
-            temp.push_back(i);
-        }
-    }
-    return temp[k - 1];
-
-}
+//int findKthPositive(vector<int> &arr, int k) {
+//    vector<int> temp;
+//    for (int i = 1; i <= 13; i++) {
+//        bool found = false;
+//        for (int j = 0; j < arr.size(); j++) {
+//            if (arr[j] == i) {
+//                found = true;
+//            }
+//        }
+//        if (found == false) {
+//            temp.push_back(i);
+//        }
+//    }
+//    return temp[k - 1];
+//
+//}
 
 //    int findKthPositive(vector<int>& arr, int k) {
 //    for(int i =0;i<arr.size();i++){
@@ -96,6 +96,22 @@ int findKthPositive(vector<int> &arr, int k) {
 //    }
 //    return k;
 //    }
+
+int findKthPositive(vector<int> &arr, int k) {
+    int n = arr.size();
+    int low = 0;
+    int high = n - 1;
+    while (high >= low) {
+        int mid = (high + low) / 2;
+        int missing = arr[mid] - (mid + 1);
+        if (missing < k) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+    return k + low;
+}
 
 int main() {
     vector<int> v = {2, 3, 4, 7, 11};
