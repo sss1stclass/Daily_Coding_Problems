@@ -71,10 +71,28 @@ int shipWithinDays(vector<int> &weights, int days) {
 
 }
 
+int findKthPositive(vector<int> &arr, int k) {
+    vector<int> temp;
+    for (int i = 1; i <= 13; i++) {
+        bool found = false;
+        for (int j = 0; j < arr.size(); j++) {
+            if (arr[j] == i) {
+                found = true;
+            }
+        }
+        if (found == false) {
+            temp.push_back(i);
+        }
+    }
+    return temp[k - 1];
+
+}
+
 int main() {
-    vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    vector<int> v = {2, 3, 4, 7, 11};
     int days = 5;
-    cout << shipWithinDays(v, days);
+//    cout << shipWithinDays(v, days);
+    cout << findKthPositive(v, days);
 //    cout << countTotal(v) << endl;
 //    cout << maxEleme(v) << endl;
     return 0;
