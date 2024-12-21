@@ -814,6 +814,12 @@ build CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj: CXX_COMPILER__bs_med
   OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
   OBJECT_FILE_DIR = CMakeFiles\bs_medium_sqrt.dir
 
+build CMakeFiles/bs_medium_sqrt.dir/MedianOf2array.cpp.obj: CXX_COMPILER__bs_medium_sqrt_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/MedianOf2array.cpp || cmake_object_order_depends_target_bs_medium_sqrt
+  DEP_FILE = CMakeFiles\bs_medium_sqrt.dir\MedianOf2array.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
+  OBJECT_FILE_DIR = CMakeFiles\bs_medium_sqrt.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bs_medium_sqrt
@@ -822,7 +828,7 @@ build CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj: CXX_COMPILER__bs_med
 #############################################
 # Link the executable bs_medium_sqrt.exe
 
-build bs_medium_sqrt.exe: CXX_EXECUTABLE_LINKER__bs_medium_sqrt_Debug CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj
+build bs_medium_sqrt.exe: CXX_EXECUTABLE_LINKER__bs_medium_sqrt_Debug CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj CMakeFiles/bs_medium_sqrt.dir/MedianOf2array.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
@@ -898,6 +904,39 @@ build shipping_containers.exe: CXX_EXECUTABLE_LINKER__shipping_containers_Debug 
   TARGET_IMPLIB = libshipping_containers.dll.a
   TARGET_PDB = shipping_containers.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target MedianOf2array
+
+
+#############################################
+# Order-only phony target for MedianOf2array
+
+build cmake_object_order_depends_target_MedianOf2array: phony || CMakeFiles/MedianOf2array.dir
+
+build CMakeFiles/MedianOf2array.dir/MedianOf2array.cpp.obj: CXX_COMPILER__MedianOf2array_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/MedianOf2array.cpp || cmake_object_order_depends_target_MedianOf2array
+  DEP_FILE = CMakeFiles\MedianOf2array.dir\MedianOf2array.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\MedianOf2array.dir
+  OBJECT_FILE_DIR = CMakeFiles\MedianOf2array.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MedianOf2array
+
+
+#############################################
+# Link the executable MedianOf2array.exe
+
+build MedianOf2array.exe: CXX_EXECUTABLE_LINKER__MedianOf2array_Debug CMakeFiles/MedianOf2array.dir/MedianOf2array.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\MedianOf2array.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = MedianOf2array.exe
+  TARGET_IMPLIB = libMedianOf2array.dll.a
+  TARGET_PDB = MedianOf2array.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -923,6 +962,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
+
+build MedianOf2array: phony MedianOf2array.exe
 
 build bs_medium_sqrt: phony bs_medium_sqrt.exe
 
@@ -984,7 +1025,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/Lenovo/CLionProjects/SDE-1/cmake-build-debug
 
-build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe kokoEatingBanana_bs.exe shipping_containers.exe
+build all: phony untitled3.exe test.exe hash.exe stl.exe day3_check_sorted_arrya.exe setDataStructure.exe day4_remove_duplicates.exe day5_move_zeros.exe day5_linear_search.exe day7_union.exe day8_count1s.exe day9_count_singles.exe day10_longest_subarray.exe day11_sort01.exe day_12_twosum.exe day_13_marjority.exe day14_max_subarray.exe day15_matrix.exe maximumSubArray_day16.exe day16_PascalTriangle.exe day17_BS.exe day18.exe day19_rotatedArray.exe bs_medium_sqrt.exe kokoEatingBanana_bs.exe shipping_containers.exe MedianOf2array.exe
 
 # =============================================================================
 # Built-in targets

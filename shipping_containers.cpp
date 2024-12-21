@@ -113,6 +113,10 @@ int findKthPositive(vector<int> &arr, int k) {
     return k + low;
 }
 
+int aggresiveCows(vector<int> v, int k, int n) {
+
+}
+
 int main() {
     vector<int> v = {2, 3, 4, 7, 11};
     int days = 5;
