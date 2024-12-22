@@ -34,6 +34,22 @@ int countPages(vector<int> arr, int pages) {
 
 }
 
+int splitArray(vector<int> &nums, int k) {
+    if (k > nums.size()) return -1;
+    int low = *max_element(nums.begin(), nums.end());
+    int high = accumulate(nums.begin(), nums.end(), 0);
+    while (high >= low) {
+        int mid = (high + low) / 2;
+        int pages = countPages(nums, mid);
+        if (pages > k) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+    return low;
+}
+
 int findPages(vector<int> &arr, int n, int m) {
     if (m > n) return -1;
     int low = *max_element(arr.begin(), arr.end());
@@ -55,7 +71,7 @@ int main() {
 //    vector<int> nums2 = {3, 4};
     int n = nums1.size();
     int m = 2;
-    int asn = findPages(nums1, n, m);
+    int asn = splitArray(nums1, m);
     cout << asn << endl;
     return 0;
 }
