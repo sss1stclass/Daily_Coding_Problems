@@ -35,12 +35,17 @@ bool isPalindrome(char s[]) {
     return true;
 }
 
+bool isssPalindrome(string s) {
+
+}
+
 int main() {
-    string st = "52";
+    string st = "A man, a plan, a canal: Panama";
     char star[20] = "abbaaa";
-    cout << largestOddNumber(st);
-    cout << isPalindrome(star);
+//    cout << largestOddNumber(st);
+//    cout << isPalindrome(star);
 //    cout << checkLen(star);
+    cout << isssPalindrome(st);
     return 0;
 }
 
