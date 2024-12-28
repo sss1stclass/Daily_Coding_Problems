@@ -77,10 +77,35 @@ void reverseString(vector<char> &s) {
     }
 }
 
+string rev(string st) {
+    int n = st.length() - 1;
+    for (int i = 0; i < n / 2; i++) {
+        swap(st[i], st[n - i]);
+    }
+    return st;
+}
+
+string reverseTotal(string st) {
+    string ans = "";
+    for (int i = 0; i < st.length(); i++) {
+        if (st[i] != ' ') {
+            ans.push_back(st[i]);
+        }
+
+
+    }
+    string inc = rev(ans);
+    cout << inc;
+//    cout << ans;
+}
+
 int main() {
-    string st = "A man, a plan, a canal -- Panama";
+    string st = "this";
     vector<char> ch = {'a', 'h', 'e', 'l'};
-    reverseString(ch);
+//    reverseString(ch);
+    st += 'a';
+    cout << st;
+//    reverseTotal(st);
 //    cout << largestOddNumber(st);
 //    cout << isPalindrome(star);
 //    cout << checkLen(star);
