@@ -826,6 +826,12 @@ build CMakeFiles/bs_medium_sqrt.dir/BasicString.cpp.obj: CXX_COMPILER__bs_medium
   OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
   OBJECT_FILE_DIR = CMakeFiles\bs_medium_sqrt.dir
 
+build CMakeFiles/bs_medium_sqrt.dir/basicString2.cpp.obj: CXX_COMPILER__bs_medium_sqrt_Debug C$:/Users/Lenovo/CLionProjects/SDE-1/basicString2.cpp || cmake_object_order_depends_target_bs_medium_sqrt
+  DEP_FILE = CMakeFiles\bs_medium_sqrt.dir\basicString2.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
+  OBJECT_FILE_DIR = CMakeFiles\bs_medium_sqrt.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bs_medium_sqrt
@@ -834,7 +840,7 @@ build CMakeFiles/bs_medium_sqrt.dir/BasicString.cpp.obj: CXX_COMPILER__bs_medium
 #############################################
 # Link the executable bs_medium_sqrt.exe
 
-build bs_medium_sqrt.exe: CXX_EXECUTABLE_LINKER__bs_medium_sqrt_Debug CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj CMakeFiles/bs_medium_sqrt.dir/MedianOf2array.cpp.obj CMakeFiles/bs_medium_sqrt.dir/BasicString.cpp.obj
+build bs_medium_sqrt.exe: CXX_EXECUTABLE_LINKER__bs_medium_sqrt_Debug CMakeFiles/bs_medium_sqrt.dir/bs_medium_sqrt.cpp.obj CMakeFiles/bs_medium_sqrt.dir/MedianOf2array.cpp.obj CMakeFiles/bs_medium_sqrt.dir/BasicString.cpp.obj CMakeFiles/bs_medium_sqrt.dir/basicString2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\bs_medium_sqrt.dir
