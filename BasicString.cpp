@@ -66,13 +66,25 @@ bool isssPalindrome(string s) {
     return checkPalindrome(temp);
 }
 
+void reverseString(vector<char> &s) {
+    vector<char> sn;
+    int n = s.size() - 1;
+    for (int i = 0; i <= n / 2; i++) {
+        swap(s[i], s[n - i]);
+    }
+    for (auto i: s) {
+        cout << i << " ";
+    }
+}
+
 int main() {
     string st = "A man, a plan, a canal -- Panama";
-    char star[20] = "ab_a";
+    vector<char> ch = {'a', 'h', 'e', 'l'};
+    reverseString(ch);
 //    cout << largestOddNumber(st);
 //    cout << isPalindrome(star);
 //    cout << checkLen(star);
-    cout << isssPalindrome(st);
+//    cout << isssPalindrome(st);
     return 0;
 }
 
