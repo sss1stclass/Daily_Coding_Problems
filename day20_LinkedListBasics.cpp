@@ -46,18 +46,43 @@ int lengthLL(Node* head){
     return  count;
 }
 
+int sumOfLastN_Nodes(Node* head, int n) {
+    // Code here
+    Node* temp = head;
+    int  count=0;
+    int ans = 0;
+    while(temp){
+        if(count>n){
+            ans = ans+temp->data;
+        }
+        temp=temp->next;
+        count++;
+        cout<<temp->data<<" ";
+    }
+//    return ans;
+}
+
 int main (){
-vector<int>arr= {2,5,4,6};
+vector<int>arr= {2,5,4,6,1};
 Node* y = new Node(arr[0]);
 Node* head = convertArrtoll(arr);
+//cout<<sumOfLastN_Nodes(head,3)<<endl;
+
 //cout<<head->data<<endl;
-cout<<lengthLL(head)<<"length"<<endl;
-cout<<y<<endl;
+//cout<<lengthLL(head)<<"length"<<endl;
+//cout<<y<<endl;
 Node* temp = head;
-cout<<checkVal(head, 15)<<endl;
+int ans=0;
+int count =0;
+//cout<<checkVal(head, 15)<<endl;
 while(temp){
     cout<<temp->data<<" ";
+    if(count>=3){
+        ans= ans+temp->data;
+        cout<<ans<<endl;
+    }
     temp= temp->next;
+    count++;
 }
     return 0;
 }
