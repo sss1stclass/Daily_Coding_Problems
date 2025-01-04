@@ -60,12 +60,54 @@ Node* insertAtFront(Node* head, int x){
     return new Node(x, head);
 }
 
+Node* insertAtSpecificPosition(Node* head, int val, int k){
+    if(head==NULL){
+        if(k==1){
+            return new Node(val);
+        }
+    }
+    if(k==1){
+        return  new Node(val, head);
+    }
+    int count = 0;
+    Node* temp = head;
+    while(temp!=NULL){
+        count++;
+        if(count == k-1){
+            Node* newNode = new Node(val, temp->next);
+            temp->next= newNode;
+            break;
+        }
+        temp= temp->next;
+    }
+    return head;
+}
+
+Node* insertAtVal(Node* head, int val, int num){
+    if(head==NULL){
+        return NULL;
+    }
+    if(head->data == num){
+        return  new Node(val, head);
+    }
+    Node* temp = head;
+    while(temp->next!= NULL){
+        if(temp->next->data == num){
+            Node* newNode = new Node(val, temp->next);
+            temp->next = newNode;
+            break;
+        }
+        temp= temp->next;
+    }
+    return head;
+}
+
 int main(){
     vector<int> arr = { 1,4,7,2,9};
     Node* head = merge(arr);
 //    head = deleteHead(head);
 //      head = insertAtEnd(NULL, 340);
-       head = insertAtFront(head, 100);
+       head = insertAtVal(head, 100, 1);
     print(head);
 
     return 0;
