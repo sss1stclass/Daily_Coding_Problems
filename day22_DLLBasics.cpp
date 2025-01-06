@@ -50,10 +50,53 @@ int countTheList(Node* head, int k){
      return 0;
 }
 
+Node* insertionAtHead(Node* head, int val){
+   Node* newNode = new Node(val, head, nullptr);
+   head = newNode;
+   return head;
+}
+Node* insertAtEnd(Node* head, int val){
+    Node* temp = head;
+    while(temp->next !=NULL){
+        temp=temp->next;
+    }
+    Node* newNode = new Node(val,NULL, temp->next);
+    temp->next=newNode;
+    return  head;
+
+}
+
+Node *addNode(Node *head, int pos, int data) {
+    // code here
+//    if(pos==0){
+//        Node* newNode = new Node(data, head, nullptr);
+//        head = newNode;
+//        return head;
+//    }
+    Node* temp = head;
+    int count = -1;
+    while(temp->next!= nullptr){
+        count++;
+        cout<<count<<" ";
+        if(count==pos){
+            Node* newNode = new Node(data,temp->next,temp);
+            temp->next = newNode;
+            temp->next->back = newNode;
+            break;
+        }
+        temp= temp->next;
+    }
+    return head;
+
+}
+
+
 int main(){
-    vector<int> arr = {2,3,5,1,8,6};
+    vector<int> arr = {2,3,5,1,8};
     Node* head = convertArrayToDLL(arr);
-    cout<<countTheList(head,15)<<endl;
+    head = addNode(head, 4,6);
+    cout<<endl;
+//    cout<<countTheList(head,15)<<endl;
     print(head);
 
     return 0;
