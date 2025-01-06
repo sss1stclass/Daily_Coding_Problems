@@ -150,7 +150,8 @@ int main(){
 ////    head = deleteHead(head);
 ////      head = insertAtEnd(NULL, 340);
 //       head = insertAtVal(head, 100, 1);
-head = deleteAtVal(head,7);
+//head = deleteAtVal(head,7);
+cout<<head->next->next->data<<endl;
     print(head);
 
     return 0;
