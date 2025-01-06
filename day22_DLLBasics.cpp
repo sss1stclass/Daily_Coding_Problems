@@ -26,13 +26,35 @@ void print(Node* head){
     }
 }
 
+Node* convertArrayToDLL(vector<int>&arr){
+    Node* head = new Node(arr[0]);
+    Node* temp = head;
+    for( int i =1; i<arr.size();i++){
+        Node* newNode = new Node(arr[i], NULL, temp);
+        temp->next = newNode;
+        temp=newNode;
+    }
+    return head;
+}
+int countTheList(Node* head, int k){
+   Node* temp = head;
+   int count = 0;
+   while(temp!= nullptr){
+       count++;
+       if(temp->data == k){
+           return 1;
+       }
+       temp= temp->next;
+   }
+//   return count;
+     return 0;
+}
+
 int main(){
-    Node* newNode = new Node(2);
-    Node* node2= new Node(3, nullptr, newNode);
-    newNode->next= node2;
-    Node* node3 = new Node(4, nullptr,node2);
-    node2->next= node3;
-    print(newNode);
+    vector<int> arr = {2,3,5,1,8,6};
+    Node* head = convertArrayToDLL(arr);
+    cout<<countTheList(head,15)<<endl;
+    print(head);
 
     return 0;
 }
