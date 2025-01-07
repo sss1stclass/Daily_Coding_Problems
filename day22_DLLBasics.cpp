@@ -90,13 +90,62 @@ Node *addNode(Node *head, int pos, int data) {
 
 }
 
+Node* deleteFromFirst(Node* head){
+    Node* temp = head;
+    head= head->next;
+    delete(temp);
+    return head;
+}
+Node* deleteFromLast(Node* head){
+    if(head == NULL || head->next== nullptr){
+        return head;
+    }
+    Node* temp = head;
+    while(temp->next!= NULL){
+        temp = temp->next;
+    }
+    Node* prev = temp->back;
+//    temp->back->next= nullptr;
+    temp->back= nullptr;
+    prev->next= nullptr;
+    delete(temp);
+    return head;
+}
+
+Node* deleteFromIndex(Node* head, int index){
+    if(head == nullptr){
+        return nullptr;
+    }
+    Node* temp = head;
+    int count = 0;
+    while(temp!= nullptr){
+        count++;
+        if(index==count) break;
+        temp=temp->next;
+    }
+    Node* prev = temp->back;
+    Node* newNext = temp->next;
+    if(prev == nullptr){
+        return  deleteFromFirst(head);
+    }
+    else if(newNext == nullptr){
+        return  deleteFromLast(head);
+    }
+    temp->next= nullptr;
+    temp->back= nullptr;
+    prev->next= newNext;
+    newNext->back=prev;
+    delete(temp);
+    return head;
+}
+
 
 int main(){
     vector<int> arr = {2,3,5,1,8};
     Node* head = convertArrayToDLL(arr);
-    head = addNode(head, 4,6);
-    cout<<endl;
+//    head = addNode(head, 4,6);
 //    cout<<countTheList(head,15)<<endl;
+      head = deleteFromIndex(head,5);
     print(head);
 
     return 0;
