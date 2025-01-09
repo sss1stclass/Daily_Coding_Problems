@@ -65,6 +65,32 @@ Node* middleNode(Node* head) {
     return head;
 }
 
+Node* middleNodeWithTortoiseHareMethod(Node* head){
+    Node* fast=head;
+    Node* slow = head;
+    while(fast!= nullptr && fast->next!= nullptr){
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    return slow;
+}
+
+bool hasCycle(Node *head) {
+    if(head==NULL || head->next==NULL){
+        return false;
+    }
+    Node* fast = head;
+    Node* slow = head;
+    while(fast != NULL && fast->next != NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+        if(fast==slow){
+            return true;
+        }
+    }
+    return false;
+}
+
 int main (){
     Node* head = new Node(1);
     Node* node2 = new Node(3,NULL, head);
@@ -75,8 +101,9 @@ int main (){
     node3->next=node4;
     Node* node5 = new Node(2,NULL, node4);
     node4->next = node5;
-    Node* newHead = middleNode(head);
-    print(newHead);
+//    Node* newHead = middleNodeWithTortoiseHareMethod(head);
+    cout<<hasCycle(head);
+//    print(newHead);
     return 0;
 
 }
