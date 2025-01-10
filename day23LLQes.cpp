@@ -90,7 +90,7 @@ bool hasCycle(Node *head) {
     }
     return false;
 }
-Node *detectCycle(Node *head) {
+Node *detectCycleBF(Node *head) {
     if(head==NULL || head->next==NULL) return NULL;
     unordered_map<Node*, int> nodeMap;
     Node* temp = head;
@@ -104,19 +104,43 @@ Node *detectCycle(Node *head) {
     return NULL;
 }
 
+Node* detectCycle(Node* head){
+    Node* slow = head;
+    Node* fast = head;
+    if(head == NULL || head->next==NULL){
+        return NULL;
+    }
+    while(fast!=NULL && fast->next!= nullptr){
+        if(fast==slow){
+            slow=head;
+            while(slow!=fast){
+                slow=slow->next;
+                fast=fast->next;
+            }
+            return slow;
+            break;
+        }
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+
+    return NULL;
+}
+
+
 int main (){
     Node* head = new Node(1);
-    Node* node2 = new Node(3,NULL, head);
+    Node* node2 = new Node(83,NULL, head);
     head->next=node2;
     Node* node3 = new Node(9,NULL, node2);
     node2->next = node3;
-    Node* node4 = new Node(5,NULL, node3);
+    Node* node4 = new Node(3,NULL, node3);
     node3->next=node4;
-    Node* node5 = new Node(2,node3, node4);
+    Node* node5 = new Node(1,NULL, node4);
     node4->next = node5;
-    Node* newHead = detectCycle(head);
-//    cout<<hasCycle(head);
-    print(newHead);
+//    Node* newHead = detectCycle(head);
+    cout<<isPalindrome(head);
+//    print(newHead);
     return 0;
 
 }
