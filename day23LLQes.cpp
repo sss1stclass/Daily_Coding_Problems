@@ -90,6 +90,19 @@ bool hasCycle(Node *head) {
     }
     return false;
 }
+Node *detectCycle(Node *head) {
+    if(head==NULL || head->next==NULL) return NULL;
+    unordered_map<Node*, int> nodeMap;
+    Node* temp = head;
+    while(temp!=NULL){
+        if(nodeMap.find(temp) != nodeMap.end()){
+            return temp;
+        }
+        nodeMap[temp]=1;
+        temp= temp->next;
+    }
+    return NULL;
+}
 
 int main (){
     Node* head = new Node(1);
@@ -99,11 +112,11 @@ int main (){
     node2->next = node3;
     Node* node4 = new Node(5,NULL, node3);
     node3->next=node4;
-    Node* node5 = new Node(2,NULL, node4);
+    Node* node5 = new Node(2,node3, node4);
     node4->next = node5;
-//    Node* newHead = middleNodeWithTortoiseHareMethod(head);
-    cout<<hasCycle(head);
-//    print(newHead);
+    Node* newHead = detectCycle(head);
+//    cout<<hasCycle(head);
+    print(newHead);
     return 0;
 
 }
