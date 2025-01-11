@@ -142,19 +142,60 @@ bool isPalindrome(Node* head) {
     return true;
 }
 
+Node* oddEvenList(Node* head) {
+    Node* odd = head;
+    Node* even = head->next;
+    Node* evenHead = head->next;
+    while(even!= nullptr && even->next!= nullptr){
+        odd->next=odd->next->next;
+        even->next=even->next->next;
+        odd=odd->next;
+        even=even->next;
+    }
+    odd->next=evenHead;
+    return head;
+}
+int lengthLL(Node* head){
+    int count =0;
+    while(head!= nullptr){
+        count++;
+        head= head->next;
+    }
+    return count;
+}
+Node* removeNthFromEnd(Node* head, int n) {
+    if(head==NULL || head->next == NULL) return NULL;
+   Node* temp = head;
+   int count=0;
+   int val = lengthLL(head) - n;
+   while(temp!= nullptr){
+        count++;
+        if(count==val){
+            Node* newNode= temp->next;
+            temp->next=newNode->next;
+            newNode->next= nullptr;
+            delete(newNode);
+            break;
+        }
+        temp= temp->next;
+   }
+   return head;
+
+}
+
 int main (){
     Node* head = new Node(1);
-    Node* node2 = new Node(83,NULL, head);
+    Node* node2 = new Node(2,NULL, head);
     head->next=node2;
-    Node* node3 = new Node(9,NULL, node2);
+    Node* node3 = new Node(3,NULL, node2);
     node2->next = node3;
-    Node* node4 = new Node(3,NULL, node3);
+    Node* node4 = new Node(4,NULL, node3);
     node3->next=node4;
-    Node* node5 = new Node(1,NULL, node4);
+    Node* node5 = new Node(5,NULL, node4);
     node4->next = node5;
-//    Node* newHead = detectCycle(head);
-    cout<<isPalindrome(head);
-//    print(newHead);
+    Node* newHead = removeNthFromEnd(head,2);
+//    cout<<isPalindrome(head);
+    print(newHead);
     return 0;
 
 }
