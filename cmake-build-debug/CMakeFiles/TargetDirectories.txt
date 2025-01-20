@@ -31,5 +31,7 @@ C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/day22_DLLBasics.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/day23LLQes.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/day24LLMediumQes.dir
+C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/understandingClass.dir
+C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/basics.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir

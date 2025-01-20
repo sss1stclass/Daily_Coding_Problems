@@ -99,6 +99,28 @@ string reverseTotal(string st) {
 //    cout << ans;
 }
 
+string removeOuterParentheses(string s) {
+    int balance = 0;
+    string result = "";
+
+    for (char c : s) {
+        if (c == '(') {
+            if (balance > 0) {
+                result += c; // Add to result only if we are not at outermost level
+            }
+            balance++;
+        } else {
+            balance--;
+            if (balance > 0) {
+                result += c; // Add to result only if we are not at outermost level
+            }
+        }
+    }
+
+    return result;
+}
+
+
 int main() {
     string st = "this";
     vector<char> ch = {'a', 'h', 'e', 'l'};
@@ -110,6 +132,8 @@ int main() {
 //    cout << isPalindrome(star);
 //    cout << checkLen(star);
 //    cout << isssPalindrome(st);
+  vector<int>arr= {1,2,3,3,4};
+  cout<<arr.size();
     return 0;
 }
 
