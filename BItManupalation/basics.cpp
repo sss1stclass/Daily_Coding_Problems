@@ -53,6 +53,42 @@ void swap2NumberWithout3rdVar(int a, int b){
     a=a^b;
     cout<<a<<" "<<b<<endl;
 }
+int findOddNumber(vector<int>&arr){
+    unordered_map<int , int>hasmap;
+    for(int i =0;i<arr.size();i++){
+        hasmap[arr[i]]+=1;
+    }
+    for(auto i : hasmap){
+        if(i.second == 1){
+            return i.first;
+        }
+    }
+    cout<<endl;
+    return -1;
+}
+
+int countSetBits(int n)
+{
+    int mostCount = 0;
+
+    // Iterate over all numbers from 1 to n
+    for (int i = 1; i <= n; i++) {
+        int count = 0;
+
+        // Count set bits in the current number
+        while (i > 0) {
+            count += i & 1;   // Add 1 if the least significant bit is set
+            i >>= 1;           // Right shift to check the next bit
+        }
+
+        // Add the number of set bits for the current number to the total
+        mostCount += count;
+    }
+
+    return mostCount;
+}
+
+
 
 
 
@@ -61,11 +97,9 @@ int main(){
     decimalToBinary(num);
     int num2 = 23;
     swap2NumberWithout3rdVar(num,num2);
-    vector<int>arr={2,3,4,5,6,7,8};
-//    toCheckOddEven(arr);
-    for(auto i : toCheckOddEven(arr)){
-        cout<<i<<" ";
-    }
+    vector<int>arr={2,2,4,3,3,4,5};
+    cout<<countSetBits(7);
+
 
 
     return 0;
