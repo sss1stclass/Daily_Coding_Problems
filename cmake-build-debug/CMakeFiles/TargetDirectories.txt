@@ -37,5 +37,6 @@ C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/Recursion.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/NGE.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/MonotonicStack.dir
+C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/twoPointers.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir

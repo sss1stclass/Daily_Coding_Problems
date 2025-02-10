@@ -37,9 +37,11 @@ add_executable(day22_DLLBasics day22_DLLBasics.cpp)
 add_executable(day23LLQes day23LLQes.cpp)
 add_executable(day24LLMediumQes day24LLMediumQes.cpp)
 add_executable(understandingClass understandingClass.cpp)
-add_executable(basics BItManupalation/basics.cpp BItManupalation/NGEexample.cpp BItManupalation/MonotonicStack.cpp)
+add_executable(basics BItManupalation/basics.cpp BItManupalation/NGEexample.cpp BItManupalation/MonotonicStack.cpp BItManupalation/twoPointers.cpp)
 add_executable(stack BItManupalation/stack.cpp)
 add_executable(Recursion BItManupalation/Recursion.cpp)
 add_executable(NGE BItManupalation/NGEexample.cpp)
 add_executable(MonotonicStack BItManupalation/MonotonicStack.cpp)
+add_executable(twoPointers BItManupalation/twoPointers.cpp)
+
 
