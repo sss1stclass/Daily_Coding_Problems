@@ -20,6 +20,35 @@ int rotatedArray(vector<int> &arr, int number, int k){
     }cout<<endl;
 }
 
+
+int stock(vector<int>& arr){
+    int n = arr.size();
+    int maxSum =0;
+    int mini = INT_MAX;
+    for(int i =0;i<n;i++){
+        mini = min(mini, arr[i]);
+        maxSum = max(maxSum, arr[i]-mini);
+    }
+    return  maxSum;
+}
+
+
+int maxArea(vector<int>& height) {
+    int left = 0, right = height.size() - 1;
+    int max_area = 0;
+
+    while (left < right) {
+        int current_area = min(height[left], height[right]) * (right - left);
+        max_area = max(max_area, current_area);
+        if (height[left] < height[right]) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return max_area;
+}
 int main() {
     int arr[] = {1, 4, 6, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
