@@ -169,15 +169,130 @@ string removeDigit(string number, char digit) {
     return "as";
 }
 
+//int numSubarraysWithSum(vector<int>& nums, int goal) {
+//    int counter =0;
+//int n = nums.size();
+//for(int i =0;i<n;i++){
+//    int sum=0;
+//    for(int j =i;j<n;j++){
+//        sum+=nums[j];
+//        if(sum==goal){
+//            counter++;
+//        }
+//    }
+//}
+//return counter;
+//}
+
+int calculate(vector<int>& nums, int goal) {
+    int counter =0;
+    int n = nums.size();
+    int sum = 0;
+    int l =0; int r =0;
+    while(r<n){
+        sum+=nums[r];
+        while(sum>goal){
+            sum=sum-nums[l];
+            l++;
+        }
+        if(sum<=goal){
+            counter = counter+(r-l+1);
+        }
+       r++;
+    }
+    return counter;
+}
+
+int numSubarraysWithSum(vector<int>& nums, int goal) {
+
+    int sum = calculate(nums, goal) - calculate(nums, goal-1);
+    return sum;
+}
+
+int numberOfSubarrays(vector<int>& nums, int k) {
+    int n = nums.size();
+    int count=0;
+    for(int i =0;i<n;i++){
+        int sum = 0;
+        for(int j=i;j<n;j++){
+            sum +=nums[j];
+            int len = j-i;
+            if((len==k) && (sum%2!=0)){
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
+vector<int> findDiagonalOrder(vector<vector<int>>& mat) {
+    unordered_map<int, deque<int>> diagonals;
+    int m = mat.size();
+    int n = mat[0].size();
+
+    for (int i = 0; i < m; ++i) {
+        for (int j = 0; j < n; ++j) {
+            diagonals[i + j].push_front(mat[i][j]);
+        }
+    }
+
+    vector<int> result;
+    for (auto& diagonal : diagonals) {
+        while (!diagonal.second.empty()) {
+            result.push_back(diagonal.second.front());
+            diagonal.second.pop_front();
+        }
+    }
+
+    return result;
+}
+
+int numberOfSubstrings(string s) {
+ int n = s.length();
+ int counter =0;
+ for(int i =0;i<n;i++){
+     char hash[3] = {0};
+     for(int j =i;j<n;j++){
+         hash[s[j]-'a']=1;
+         if(hash[0]+hash[1]+hash[2]==3){
+            counter++;
+         }
+     }
+ }
+ return counter;
+}
+
+bool setcheck(vector<int>&v,int k){
+    set<int>s;
+    s.insert(v.begin(),v.end());
+    if(s.size()==k){
+        return true;
+    }
+    return false;
+}
+
+int subarraysWithKDistinct(vector<int>& nums, int k) {
+  int n = nums.size();
+  int counter = 0;
+  for(int i =0;i<n;i++){
+      for(int j = i;j<n;j++){
+          vector<int>temp;
+          for(int k =i;k<=j;k++){
+             temp.push_back(nums[k]);
+          }
+          if(setcheck(temp, k)){
+              counter++;
+          }
+      }
+  }
+  return counter;
+}
 
 
 
 int main (){
-//   vector<int>s = {3,3,3,1,2,1,1,2,3,3,4};
-     string s = "shrianshi";
-//    cout<<removeDigit(s, '1');
-     string news = s.substr(1);
-     cout<<news;
+   vector<int>s = {1,2,1,3,4};
+ cout<<subarraysWithKDistinct(s,3)<<endl;
 
     return 0;
 }
