@@ -84,8 +84,68 @@ bool canJump(vector<int>& nums) {
     }
     return true;
 }
+
+bool hasSameDigits(string s) {
+    string temp = s;
+    for(int i=0;i<s.length()-1;i++){
+        string ans="";
+        for(int j =0;j<temp.length()-1;j++){
+            int num =(temp[j]-'0' + temp[j+1]-'0') % 10;
+            ans+= to_string(num);
+        }
+        if(ans.length()==2){
+           if(ans[0]!=ans[1]){
+               return false;
+           }else{
+               return true;
+           }
+        }
+        temp = ans;
+    }
+return true;
+}
+
+int minimumCardPickup(vector<int>& cards) {
+    unordered_map<int, int>mp;
+    int l=0;int r=0;
+    int count=INT_MAX;
+    while(r<cards.size()){
+        mp[cards[r]]++;
+
+        while (mp[cards[r]] == 2) {
+            count = min(count, r - l + 1);
+            mp[cards[l]]--;
+            l++;
+        }
+        r++;
+    }
+    return count==INT_MAX?-1:count;
+}
+
+int numOfSubarrays(vector<int>& arr) {
+    const int MOD = 1e9 + 7;
+    int counter = 0;
+    int odd_count = 0, even_count = 1;
+    int prefix_sum = 0;
+
+    for (int num : arr) {
+        prefix_sum += num;
+
+        if (prefix_sum % 2 == 0) {
+            counter = (counter + odd_count) % MOD;
+            even_count++;
+        } else {
+            counter = (counter + even_count) % MOD;
+            odd_count++;
+        }
+    }
+
+    return counter;
+}
+
 int main(){
-    vector<int>bills={3,2,1,0,4};
-    cout<<canJump(bills);
+    vector<int>bills={1,3,5};
+    string s = "3902";
+    cout<<numOfSubarrays(bills);
     return 0;
 }
