@@ -143,6 +143,37 @@ int numOfSubarrays(vector<int>& arr) {
     return counter;
 }
 
+class Solution {
+public:
+    int minimumRecolors(string blocks, int k) {
+        int n = blocks.length();
+        int l = 0, r = 0;
+        int count = 0;
+        int minCount = INT_MAX;
+
+        while (r < n) {
+            if (blocks[r] == 'W') {
+                count++;
+            }
+
+            if (r - l + 1 == k) {
+                minCount = min(minCount, count);
+
+                if (blocks[l] == 'W') {
+                    count--;
+                }
+
+                l++;
+            }
+
+            r++;
+        }
+
+        return minCount;
+    }
+};
+
+
 int main(){
     vector<int>bills={1,3,5};
     string s = "3902";
