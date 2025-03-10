@@ -173,10 +173,108 @@ public:
     }
 };
 
+bool fun(int i , int j){
+    return i<j;
+}
+
+vector<int>twoSum(vector<int>&arr){
+    int n = arr.size();
+    unordered_map<int,int>mp;
+    for(int i =0;i<n;i++){
+        int start = arr[i];
+        int diff = 13-start;
+        if(mp.find(diff)!=mp.end()){
+            return {mp[diff],i};
+        }
+        mp[start]=i;
+    }
+    return {-1,-1};
+}
+
+//vector<int>start={1, 3, 0, 9, 8, 5};
+//vector<int>end={2, 4, 6, 7, 9, 9};
+//vector<int>ans = twoSum(start);
+//for(auto i : ans){
+//cout<<i<<" ";
+//}cout<<endl;
+//vector<pair<int, int>>meetings;
+//for(int i =0;i<start.size();i++){
+//meetings.push_back({start[i],end[i]});
+//}
+//sort(meetings.begin(), meetings.end(), [](pair<int, int>& a, pair<int, int>& b) {
+//return a.second < b.second;
+//});
+//int count=0;
+//int last_time = -1;
+//for(int i =0;i<start.size();i++){
+//if(meetings[i].first>last_time){
+//count++;
+//last_time=meetings[i].second;
+//}
+//}
+//cout<<count;
+//for(auto i : meetings){
+//cout<<(i.first)<<" "<<i.second<<"---";
+//}
+
+class Node{
+public:
+    int data;
+    Node* next;
+
+    Node(int data1, Node* next1){
+        data = data1;
+        next = next1;
+    }
+    Node(int data1){
+        data = data1;
+        next= nullptr;
+    }
+};
+
+void print(Node* head){
+    Node* temp = head;
+    while(temp!=NULL){
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }cout<<endl;
+
+}
+Node* reverse(Node* head){
+    Node* temp = head;
+    stack<int>st;
+    while(temp!=NULL){
+        st.push(temp->data);
+        temp = temp->next;
+    }
+    temp = head;
+    while(temp!= NULL){
+      temp->data = st.top();
+      st.pop();
+      temp= temp->next;
+    }
+    return temp;
+}
+
 
 int main(){
-    vector<int>bills={1,3,5};
-    string s = "3902";
-    cout<<numOfSubarrays(bills);
+
+    Node* node1 = new Node(2);
+    Node* node2 = new Node(3);
+    node1->next = node2;
+    Node* node3 = new Node(9);
+    node2->next = node3;
+    Node* node4  = new Node(4);
+    node3->next = node4;
+    Node* node5 = new  Node(5);
+    node4->next = node5;
+    print(node1);
+    reverse(node1);
+    print(node1);
+
+
+
+
+
     return 0;
 }

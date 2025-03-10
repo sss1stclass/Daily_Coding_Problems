@@ -40,5 +40,6 @@ C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/twoPointers.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/Revision1.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/GreedyAlgo.dir
+C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/Trees.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lenovo/CLionProjects/Daily_Coding_Problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
