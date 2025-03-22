@@ -31,7 +31,6 @@ void printInOrder(Node* node){
     cout<<node->data<<" ";
     printInOrder(node->right);
 }
-
 int main(){
     Node* root = new Node(1);
     root->left = new Node(2);
@@ -99,3 +98,4 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     }
     return ans;
 }
+
