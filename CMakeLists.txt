@@ -47,6 +47,7 @@ add_executable(Revision1 BItManupalation/Revision1.cpp)
 add_executable(GreedyAlgo BItManupalation/Greedy.cpp)
 add_executable(Trees Trees/TreesIntro.cpp)
 add_executable(zigzag Trees/Treezigzagtraversal.cpp)
+add_executable(graphBasics Graphs/BfsDfs.cpp)
 
 
 
